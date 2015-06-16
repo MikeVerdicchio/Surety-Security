@@ -6,7 +6,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <?php
-        $topics = array("Passwords", "XSS", "SQL Injection");
+        //$topics = array("Passwords", "XSS", "SQL Injection");
+        $topics = array("Passwords");
         $url = "$_SERVER[REQUEST_URI]";
         $page = explode("/", $url)[1];
         foreach ($topics as $topic){

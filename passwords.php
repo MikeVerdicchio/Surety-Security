@@ -34,16 +34,13 @@ function hash() {
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2>Overview</h2>
-				A password provides protection against other people accessing one's account. A strong password is important because
-				it helps to prevent account compromising. A strong password is easy to remember and type in along with being hard
-				for hackers to steal and guess. Generally a hacker will go about gaining a password by going through a dictionary of words
-				like the English dictionary for example, then through some common patterns like 123456 or substition of numbers for letters,
-				and then finally brute force every single combination of passwords.<br><br>
-				A passphrase is recommended as they are long and easy to remember. A passphrase can be thought of as a sentence like
-				johnwenttothestorewithjennytoday. This is a very strong password because it is long and easy to remember. The longer
-				the password, the amount of combinations it takes to guess is greatly expanded. Including symbols, numbers, uppercase, and
+				A password provides protection against other people accessing one's account. Having a strong password is important because
+				it helps prevent accounts from being compromised. Generally a hacker will go about obtaining a correct password by going through a dictionary of words
+				like the English dictionary, then through some common patterns like 123456, substition of numbers for letters like h3110, common phrases like letmein,
+				and then finally brute force every single combination of passwords like aaaa, aaab, aaac, etc..<br><br>
+				The longer the password, the amount of combinations it takes to guess is greatly expanded. Including symbols, numbers, uppercase, and
 				lowercase numbers expands the number of combinations. Having 12 or more characters in the password makes it very strong
-				and a very long time to brute force. Also using a padding that contains a uppercase, lowercase, symbol, and digit can make
+				and a very long time for a hacker to brute force. Also using a padding that contains a uppercase, lowercase, symbol, and digit can make
 				a strong password even stronger. Adding U7h^ for example to johnwenttothestoreU7h^withjennytoday is a very strong password,
 				as it has length, a large search space, and easy to remember. It would take 48.17 trillion trillion trillion trillion
 				centuries to guess and that's assuming one hundred trillion guesses per second.<br><br>
@@ -72,6 +69,7 @@ function hash() {
 				?>
 			</div>
 		</div>
+		<!--
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2>Hashing Passwords</h2>
@@ -129,6 +127,7 @@ function hash() {
 				Links to two step verification sites. <a href="https://www.google.com/landing/2step/">https://www.google.com/landing/2step/</a>
 			</div>
 		</div>
+	-->
 	</div>
 	<?php include 'footer.php';?>
 </body>
