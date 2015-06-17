@@ -13,12 +13,16 @@
     <!-- Header and Navbar -->
     <?php include 'header.php';?>
 
-    <div class="container-fluid">
-        <div class="row" style="text-align:center;">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>Passwords</h1>
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Passwords
+                </h1>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h2>What is Considered a Strong Password?</h2>
