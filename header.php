@@ -16,7 +16,7 @@
             echo "<li class='active'><a href=/". strtolower($topic) . ">" . $topic . "</a></li>";
           }
           else{
-            echo "<li><a href=/". strtolower($topic) . ">" . $topic . "</a></li>";
+            echo "<li><a href=/". strtolower($topic) . ".php>" . $topic . "</a></li>";
           }
 
         } 
