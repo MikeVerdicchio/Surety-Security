@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
-<title>Passwords</title>
+
+<html lang="en">
+
 <head>
-<?php include 'dependencies.php';?>
-<script src="js/passwordsJS.js"></script>
+    <!-- Dependencies -->
+    <?php include 'dependencies.php';?>
+    <script src="js/passwordsJS.js"></script>
 </head>
 <body>
 	<?php include 'header.php';?>
@@ -51,10 +53,9 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-
-			</div>
-		</div>
-		<!--
+        </div>
+    </div>
+        <!--
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2>Hashing Passwords</h2>
@@ -113,7 +114,10 @@
 			</div>
 		</div>
 	-->
-</div>
-<?php include 'footer.php';?>
+
+        <!-- Footer -->
+        <?php include 'footer.php';?>
+    </div>
 </body>
+
 </html>

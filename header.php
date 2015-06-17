@@ -1,13 +1,13 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">Surety Security</a>
     </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <?php
         //$topics = array("Passwords", "XSS", "SQL Injection");
-        $topics = array("Passwords");
+        $topics = array("Passwords", "User", "Developer", "About");
         $url = "$_SERVER[REQUEST_URI]";
         $page = explode("/", $url)[1];
         foreach ($topics as $topic){

@@ -2,9 +2,15 @@ body { font-family: 'Roboto Slab', serif;
 	font-size: 16px;
 	line-height: 145%;
 }
+
 h1{
 	font-size: 450%;
 }
+
 h2{
 	border-bottom: 2px solid #ddd;
+}
+
+p.small {
+    line-height: 10px;
 }
