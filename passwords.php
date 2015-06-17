@@ -38,12 +38,14 @@
 				?>
 				A password containing padding that includes an uppercase and lowercase character, symbol, and digit like U7^d can make a strong password even stronger.
 				Reusing passwords on sites is not recommended because even though one site might be safe, other sites might not
-				be secure and store their passwords in plaintext or other insecure manner<br><br>
+				be secure and store their passwords in plaintext or other insecure manner<br>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				Enter in a password: <input type="text" id="password"> <span id="strength"> </span>
+				<h2>Search Space Strength Calculator</h2><br>
+				Enter in a password: <input type="text" id="password"><br>
+				Your password is hidden within a space of <span id="strength"> </span>
 				<br><br>
 			</div>
 		</div>

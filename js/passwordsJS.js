@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$('#password').keyup(function () { 
-		document.getElementById("strength").innerHTML = "Your password is hidden within a space of " + Math.pow(95,document.getElementById("password").value.length) + " combinations";
+		document.getElementById("strength").innerHTML = Math.pow(95,document.getElementById("password").value.length) + " combinations";
 	});
 });
 function hash() {
