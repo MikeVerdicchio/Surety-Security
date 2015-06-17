@@ -3,27 +3,7 @@
 <title>Passwords</title>
 <head>
 <?php include 'dependencies.php';?>
-<script type="text/javascript">
-$(document).ready(function () {
-	$('#password').keyup(function () { 
-		document.getElementById("strength").innerHTML = Math.pow(95,document.getElementById("password").value.length);
-	});
-});
-</script>
-<script type="text/javascript">
-function hash() {
-	var xmlhttp = new XMLHttpRequest();
-	var str = $('#str').val();
-	var hash = $('#hash').val();
-	xmlhttp.onreadystatechange = function() {
-		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-			document.getElementById("result").innerHTML = xmlhttp.responseText;
-		}
-	}
-	xmlhttp.open("GET", "hash.php?string=" + str + "&hash=" + hash);
-	xmlhttp.send();
-}
-</script>
+<script src="js/passwordsJS.js"></script>
 </head>
 <body>
 	<?php include 'header.php';?>
@@ -46,9 +26,8 @@ function hash() {
 					<li>Basic transformations (dr4g0n)</li>
 					<li>A brute force search (aaa, aab, aac, ...)</li>
 				</ul>
-				A longer password increases the amount of combinations it takes to guess. Inclusion of symbols, numbers, uppercase, and
-				lowercase characters expands the number of potential combinations by expanding the search space. A password containing
-				12 or more characters is highly reommended because at 350 billion password cracks per second would take
+				A longer password and inclusion of symbols, numbers, uppercase, and lowercase characters expands the number of potential combinations 
+				by expanding the search space. A password containing 12 or more characters is highly reommended because at 350 billion password cracks per second would take
 				<?php
 				echo number_format(((pow(95, 12)/350000000000)/60), 2)." minutes or ";
 				echo number_format(((pow(95, 12)/350000000000)/60/60), 2)." hours or ";
@@ -57,15 +36,14 @@ function hash() {
 				echo number_format(((pow(95, 12)/350000000000)/60/60/24/365/1000), 2)." centuries ";
 				echo "to break in a best case scenario.<br>"
 				?>
-				A password containing padding that includes an uppercase and lowercase character, symbol, and digit can make a strong password even stronger.
+				A password containing padding that includes an uppercase and lowercase character, symbol, and digit like U7^d can make a strong password even stronger.
 				Reusing passwords on sites is not recommended because even though one site might be safe, other sites might not
-				be secure and store their passwords in plaintext<br><br>
+				be secure and store their passwords in plaintext or other insecure manner<br><br>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				Enter in a password: <input type="text" id="password"><br>
-				Your password is hidden within a space of <span id="strength"></span>
+				Enter in a password: <input type="text" id="password"> <span id="strength"> </span>
 				<br><br>
 			</div>
 		</div>
