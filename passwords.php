@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>Passwords</title>
+<head>
 <?php include 'dependencies.php';?>
 <script type="text/javascript">
 $(document).ready(function () {
@@ -23,6 +24,7 @@ function hash() {
 	xmlhttp.send();
 }
 </script>
+</head>
 <body>
 	<?php include 'header.php';?>
 	<div class="container-fluid">
@@ -34,18 +36,28 @@ function hash() {
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2>Overview</h2>
-				A password provides protection against other people accessing one's account. Having a strong password is important because
-				it helps prevent accounts from being compromised. Generally a hacker will go about obtaining a correct password by going through a dictionary of words
-				like the English dictionary, then through some common patterns like 123456, substition of numbers for letters like h3110, common phrases like letmein,
-				and then finally brute force every single combination of passwords like aaaa, aaab, aaac, etc..<br><br>
+				A password provides protection against outside forces accessing one's account. Having a strong password is important because
+				it helps prevent accounts from being compromised. Generally a hacker will go about obtaining a correct password by going through
+				<ul>
+					<li>Words found in a dictionary (dragon)</li>
+					<li>Common patterns (qwerty or 123456)</li>
+					<li>Basic transformations (dr4g0n)</li>
+					<li>Brute Force (aaa, aab, aac, ...)</li>
+				</ul>
 				The longer the password, the amount of combinations it takes to guess is greatly expanded. Including symbols, numbers, uppercase, and
-				lowercase numbers expands the number of combinations. Having 12 or more characters in the password makes it very strong
-				and a very long time for a hacker to brute force. Also using a padding that contains a uppercase, lowercase, symbol, and digit can make
-				a strong password even stronger. Adding U7h^ for example to johnwenttothestoreU7h^withjennytoday is a very strong password,
-				as it has length, a large search space, and easy to remember. It would take 48.17 trillion trillion trillion trillion
-				centuries to guess and that's assuming one hundred trillion guesses per second.<br><br>
+				lowercase numbers expands the number of potential combinations by expanding the search space. Having 12 or more characters in the
+				password is highly reommended. A 12 character password at 350 billion password cracks per second would take
+				<?php
+				echo number_format(((pow(95, 12)/350000000000)/60), 2)." minutes or ";
+				echo number_format(((pow(95, 12)/350000000000)/60/60), 2)." hours or ";
+				echo number_format(((pow(95, 12)/350000000000)/60/60/24), 2)." days or ";
+				echo number_format(((pow(95, 12)/350000000000)/60/60/24/365), 2)." years or ";
+				echo number_format(((pow(95, 12)/350000000000)/60/60/24/365/1000), 2)." centuries ";
+				echo "to break your password with a best case scenario."
+				?>
+				Also using a padding that contains a uppercase, lowercase, symbol, and digit can make a strong password even stronger.
 				Just using one word or common patterns like 123456 or monkey1 do not provide any protection as these passwords can be easily
-				found. Reusing passwords on sites is not recommended because even though one site might be secure, other sites might not
+				found. Reusing passwords on sites is not recommended because even though one site might be safe, other sites might not
 				be secure and store their passwords in plaintext<br><br>
 			</div>
 		</div>
@@ -58,15 +70,7 @@ function hash() {
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				A 12 character password at 350 billion password cracks per second would take
-				<?php
-				echo number_format(((pow(95, 12)/350000000000)/60), 2)." minutes or ";
-				echo number_format(((pow(95, 12)/350000000000)/60/60), 2)." hours or ";
-				echo number_format(((pow(95, 12)/350000000000)/60/60/24), 2)." days or ";
-				echo number_format(((pow(95, 12)/350000000000)/60/60/24/365), 2)." years or ";
-				echo number_format(((pow(95, 12)/350000000000)/60/60/24/365/1000), 2)." centuries ";
-				echo "to break your password with a best case scenario.<br><br>"
-				?>
+
 			</div>
 		</div>
 		<!--
@@ -128,7 +132,7 @@ function hash() {
 			</div>
 		</div>
 	-->
-	</div>
-	<?php include 'footer.php';?>
+</div>
+<?php include 'footer.php';?>
 </body>
 </html>
