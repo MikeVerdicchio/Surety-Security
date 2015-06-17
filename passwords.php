@@ -18,7 +18,7 @@
         <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Passwords
+                <h1 class="page-header text-center">Passwords
                 </h1>
             </div>
         </div>
