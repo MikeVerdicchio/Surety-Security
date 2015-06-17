@@ -6,6 +6,7 @@
 	<?php include 'header.php';?>
 	<div class="container-fluid">
 		<h1 style="text-align:center;">Weclome to Surety Security</h1>
+		<br>
 		<div class="row" style="text-align:center;">
 			Bringing educational material dedicated to teaching computer security fundamentals to the general public and developers
 		</div>
