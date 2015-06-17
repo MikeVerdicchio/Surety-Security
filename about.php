@@ -32,38 +32,38 @@
             <div class="col-lg-4 col-sm-6">
                 <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
                 <h3>David Evans, PhD</h3>
-                <p class="small">Director of Security Research Group</p>
                 <p class="small">PhD Computer Science</p>
+                <p class="small">Director of Security Research Group</p>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
                 <h3>Andrew Lee</h3>
-				<p class="small">BS Computer Science</p>
-				<p class="small">University of Virginia 2016</p>
+                <p class="small">BS Computer Science</p>
+                <p class="small">University of Virginia 2016</p>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
                 <h3>Brian Walter</h3>
-				<p class="small">BA History and Religious Studies</p>
-				<p class="small">University of Virginia 2017</p>
+                <p class="small">BA History and Religious Studies</p>
+                <p class="small">University of Virginia 2017</p>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
                 <h3>Mike Verdicchio</h3>
-				<p class="small">BS Computer Engineering</p>
-				<p class="small">University of Virginia 2017</p>
+                <p class="small">BS Computer Engineering</p>
+                <p class="small">University of Virginia 2017</p>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
                 <h3>Samantha Lagaetee</h3>
-				<p class="small">BS Biomedical Engineering</p>
-				<p class="small">University of Virginia 2018</p>
+                <p class="small">BS Biomedical Engineering</p>
+                <p class="small">University of Virginia 2018</p>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
                 <h3>Shweta Batheja</h3>
-				<p class="small">BA Economics</p>
-				<p class="small">University of Virginia 2017</p>
+                <p class="small">BA Economics</p>
+                <p class="small">University of Virginia 2017</p>
             </div>
         </div>
 

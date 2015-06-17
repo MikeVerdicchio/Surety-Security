@@ -16,8 +16,7 @@
         <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Security Topics
-                    <small>Developer</small>
+                <h1 class="page-header">Topics for Developers
                 </h1>
             </div>
         </div>

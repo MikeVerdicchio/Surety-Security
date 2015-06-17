@@ -7,7 +7,7 @@
       <ul class="nav navbar-nav">
         <?php
         //$topics = array("Passwords", "XSS", "SQL Injection");
-        $topics = array("Passwords");
+        $topics = array("Passwords", "User", "Developer", "About");
         $url = "$_SERVER[REQUEST_URI]";
         $page = explode("/", $url)[1];
         foreach ($topics as $topic){
@@ -16,7 +16,7 @@
             echo "<li class='active'><a href=/". strtolower($topic) . ">" . $topic . "</a></li>";
           }
           else{
-            echo "<li><a href=/". strtolower($topic) . ".php>" . $topic . "</a></li>";
+            echo "<li><a href=/". strtolower($topic) . ">" . $topic . "</a></li>";
           }
 
         } 
