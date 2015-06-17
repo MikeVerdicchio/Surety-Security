@@ -13,7 +13,7 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 
 <!-- Custom CSS -->
-<link href="styles.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
 
 <!-- Title and Favicon -->
 <title>Surety Security</title>
