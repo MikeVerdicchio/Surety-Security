@@ -5,3 +5,6 @@ body { font-family: 'Roboto Slab', serif;
 h1{
 	font-size: 450%;
 }
+h2{
+	border-bottom: 2px solid #ddd;
+}

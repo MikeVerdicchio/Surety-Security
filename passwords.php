@@ -34,7 +34,7 @@
 				echo number_format(((pow(95, 12)/350000000000)/60/60/24), 2)." days or ";
 				echo number_format(((pow(95, 12)/350000000000)/60/60/24/365), 2)." years or ";
 				echo number_format(((pow(95, 12)/350000000000)/60/60/24/365/1000), 2)." centuries ";
-				echo "to break in a best case scenario.<br>"
+				echo "to break in a best case scenario."
 				?>
 				A password containing padding that includes an uppercase and lowercase character, symbol, and digit like U7^d can make a strong password even stronger.
 				Reusing passwords on sites is not recommended because even though one site might be safe, other sites might not
@@ -43,7 +43,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<h2>Search Space Strength Calculator</h2><br>
+				<h2>Search Space Strength Calculator</h2>
 				Enter in a password: <input type="text" id="password"><br>
 				Your password is hidden within a space of <span id="strength"> </span>
 				<br><br>
