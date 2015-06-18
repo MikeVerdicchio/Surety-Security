@@ -42,6 +42,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
+				<h2>Hash a String</h2>
 				Type in a string to be hashed 
 				<input type='text' id="str"> 
 				<select id="hash">
@@ -50,6 +51,16 @@
 				</select>
 				<input type='submit' class='btn btn-default' onclick="hash()">
 				<span id='result'></span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2>Lookup a Hash</h2>
+				Type in a hash to be looked up
+				<input type='text' id="toCrack">
+				<input type='submit' class='btn btn-default' onclick="hashLookup()">
+				<span id='crack'></span><br>
+				Powered by <a href="http://www.md5crack.com/">http://www.md5crack.com/</a> API
 			</div>
 		</div>
 		<!-- Footer -->
