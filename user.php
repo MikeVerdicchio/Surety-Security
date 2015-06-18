@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-	<!-- Dependencies -->
+    <!-- Dependencies -->
     <?php include 'dependencies.php';?>
 </head>
 
 <body>
-	<!-- Header and Navbar -->
+    <!-- Header and Navbar -->
     <?php include 'header.php';?>
 
     <!-- Page Content -->
@@ -16,8 +16,7 @@
         <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Topics for Users
-                </h1>
+                <h1 class="page-header">Videos <small>General Users</small></h1>
             </div>
         </div>
         <!-- /.row -->
