@@ -31,7 +31,7 @@
                     <br>
                     <br>There are some disadvantages to two factor authentication. If the device is ever lost, then the user cannot access their account and has to go through a process in order to reset the account, though as precaution against this some services offer backup codes that can be printed and stored in a wallet. The device also has to be around at all times with the user.
                     <br>
-                    <br>Links to two step verification sites. <a href="https://www.google.com/landing/2step/">https://www.google.com/landing/2step/</a>
+                    <br>A couple great Two Factor Authentication apps are <a href="https://www.google.com/landing/2step/">Google Authenticator</a> and <a href="https://www.authy.com/users">Authy</a>.
                 </div>
             </div>
 
