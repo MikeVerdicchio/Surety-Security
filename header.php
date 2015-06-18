@@ -10,18 +10,18 @@
         $topics = array("Passwords", "User", "Developer", "About");
         $url = "$_SERVER[REQUEST_URI]";
         $page = explode("/", $url)[1];
-        foreach ($topics as $topic){
-          $temp = explode(" ", $topic)[0];
-          if($page == strtolower($temp)){
-            echo "<li class='active'><a href=/". strtolower($topic) . ">" . $topic . "</a></li>";
-          }
-          else{
-            echo "<li><a href=/". strtolower($topic) . ">" . $topic . "</a></li>";
-          }
-
-        } 
-        
-        ?>
+         ?>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >Passwords <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/passwords">Overview</a></li>
+                <li><a href="/twofactor">Two Factor Auth</a></li>
+                <li><a href="/hashing">Hashing</a></li>
+              </ul>
+            </li>
+        <li><a href="/user">User</a></li>
+        <li><a href="/developer">Developer</a></li>
+        <li><a href="/about">About</a></li>
       </ul>
     </div>
   </div>
