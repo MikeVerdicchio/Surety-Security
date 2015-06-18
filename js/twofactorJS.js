@@ -1,11 +1,10 @@
 $(document).ready(function () {
     $('#submit').click(function () {
-        if ((document.getElementById("username").textContent === "SuretySecurity") && (document.getElementById("password").textContent === "helloworld")) {
+        if ((document.getElementById("username").value === "SuretySecurity") && (document.getElementById("password").value === "helloworld")) {
             var code = Math.floor((Math.random() * 999999) + 100000);
-            window.alert(code);
-            var input = window.prompt("Please enter the code given to you.", "");
+            var input = prompt("Your generated code is " + code + ". Please enter it below to log in.", code);
 
-            if (code === input) {
+			if (code == input) {
                 window.alert("Access granted!");
             } else {
                 window.alert("Incorrect code.");
