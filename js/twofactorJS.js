@@ -1,17 +1,17 @@
-$(document).ready(function() {
-    $('#submit').click(function() {
+$(document).ready(function () {
+    $('#submit').click(function () {
         if (document.getElementById("username").textContent.equals("SuretySecurity") && document.getElementById("password").textContent.equals("helloworld")) {
             var code = Math.floor((Math.random() * 999999) + 100000);
-            alert($code);
-            var input = prompt("Please enter the code given to you.", "");
+            window.alert(code);
+            var input = window.prompt("Please enter the code given to you.", "");
 
-            if ($code == $input) {
-                alert("Access granted!");
+            if (code === input) {
+                window.alert("Access granted!");
             } else {
-                alert("Incorrect code.");
+                window.alert("Incorrect code.");
             }
         } else {
-            alert("Incorrect username and/or password. Please try again.");
+            window.alert("Incorrect username and/or password. Please try again.");
         }
 
         return false;
