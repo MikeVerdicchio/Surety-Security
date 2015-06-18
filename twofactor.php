@@ -39,8 +39,8 @@
 				<div class="col-md-8 col-md-offset-2">
 					<h2>Sample Login</h2>
 					<p>Below is a simple example of how Two Factor Authentication works when logging into a website. Try logging in with the credentials. (Username="SuretySecurity" and Password="helloworld").</p>
-					Username: <input type="text" id="username">
-					Password: <input type="text" id="password">
+					Username: <input type="text" placehold="SuretySecurity" id="username">
+					Password: <input type="text" placeholder="helloworld" id="password">
 					<button type="button" id="submit" class="btn btn-default btn-md">Login</button>
 				</div>
 			</div>
