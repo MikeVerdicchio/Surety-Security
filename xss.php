@@ -99,7 +99,7 @@
 				<div class="col-md-8 col-md-offset-2">
 					<select>
 						<script>
-						document.write("<OPTION value=1>"+location.search.split('xssparam=')[1]+"</OPTION>");
+document.write("<OPTION value=1>"+document.location.href.substring(document.location.href.indexOf("default=")+8)+"</OPTION>");
 						document.write("<OPTION value=2>English</OPTION>");
 						</script>
 					</select>
