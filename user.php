@@ -47,13 +47,11 @@
             </div>
             <div class="col-md-5">
                 <h3>What is Two-Factor Authentication?</h3>
-                <p>A brief video on what all the hype about two-factor authentication is.</p>
+                <p>Two Factor Authentication takes your Internet security to a whole new level by requiring two "keys" to get into your accounts. One key is something you <b>know</b> like your typical username/password combination. The second key is something you <b>have</b> such as a fingerprint or a randomly-generated code from an app on your smartphone.</p>
                 <a class="btn btn-primary" href="http://www.youtube.com" target="_blank">View Video<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
-
-        <hr>
 
         <!-- Footer -->
         <?php include 'footer.php';?>
