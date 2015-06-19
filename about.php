@@ -36,7 +36,7 @@
                 <p class="small">Director of Security Research Group</p>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                <img class="img-circle img-responsive img-center" src="img/shweta.jpg" alt="">
                 <h3>Shweta Batheja</h3>
                 <p class="small">BA Economics</p>
                 <p class="small">University of Virginia 2017</p>
