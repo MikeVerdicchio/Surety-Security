@@ -1,9 +1,23 @@
 $(document).ready(function() {
     "use strict";
-    autoPlayYouTubeModal();
+    playVideo();
+    $(this).find('.modal-body').css({
+        width: 'auto',
+        height: 'auto',
+        'max-height': '100%'
+    });
+
+    $('#showVideo button').click(function() {
+        $('#showVideo iframe').removeAttr('src')
+    });
+
+    $("#showVideo").on('hidden.bs.modal', function(e) {
+        $('#showVideo iframe').removeAttr('src')
+    });
+
 });
 
-function autoPlayYouTubeModal() {
+function playVideo() {
     var trigger = $("body").find('[data-toggle="modal"]');
     trigger.click(function() {
         var theModal = $(this).data("target"),
@@ -11,9 +25,6 @@ function autoPlayYouTubeModal() {
             videoSRC = videoSRC.replace("watch?v=", "v/");
         videoSRCauto = videoSRC + "?autoplay=1";
         $(theModal + ' iframe').attr('src', videoSRCauto);
-
-        $("#showVideo").on('hidden.bs.modal', function(e) {
-            $("#showVideo iframe").attr("src", $("#showVideo iframe").attr("src"));
-        });
+        $("#title").html($(this).attr("data-title"));
     });
 }

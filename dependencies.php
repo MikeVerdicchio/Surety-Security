@@ -6,6 +6,7 @@
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/jquery.bootstrap-growl.js"></script>
 
 <!-- Javascript -->
 <script src="js/bootstrap.min.js"></script>
