@@ -23,24 +23,6 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<h2>Reflected</h2>
-				
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<h2>Stored</h2>
-				
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<h2>DOM Based</h2>
-				
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
 				<?php
 				$param = "";
 				if (isset($_GET['xssparam'])){
@@ -48,13 +30,7 @@
 				}
 				echo "<input type='hidden' value=".$param.">";
 				?>
-			</div>
-		</div>
-		<div class="row">
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+				<h3>Example</h3>
 				This is an example of a XSS attack in which an object on the page is automatically
 				filled in with a parameter in the URL. The parameter is not sanitized before being
 				put into the object which can result in code being passed in.
@@ -67,10 +43,25 @@
 			</div>
 		</div>
 		<div class="row">
-			<br>
+			<div class="col-md-8 col-md-offset-2">
+				<h2>Reflected</h2>
+				Malicious code is sent as input to a server and the code is then "reflected" back to the user
+				and displayed (seen or unseen) somewhere on the page.
+			</div>
 		</div>
 		<div class="row">
-			<br>
+			<div class="col-md-8 col-md-offset-2">
+				<h2>Stored</h2>
+				Malicious code is stored on a website's servers as some form of data and when the data is requested
+				by the site it is executed as it is displayed to the user.
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2>DOM Based</h2>
+				Malicious code is injected into an element on a website and the code is executed when the element
+				is interacted with.
+			</div>
 		</div>
 		<div class="row">
 			<form action="sqlForXssPage.php" method="post" class="form-horizontal">
