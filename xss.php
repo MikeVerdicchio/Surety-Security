@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<title>XSS</title>
 <head>
+	<title>Cross Site Scripting</title>
 	<?php include 'header.php';?>
 	<script src="js/xssJS.js"></script>
 </head>

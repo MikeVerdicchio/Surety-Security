@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Hashing</title>
 	<!-- Dependencies -->
 	<?php include 'header.php';?>
 	<script src="js/hashingJS.js"></script>

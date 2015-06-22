@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Two-Factor Authentication</title>
     <!-- Dependencies -->
     <?php include 'header.php';?>
     <script src="js/twofactorJS.js"></script>

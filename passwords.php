@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Passwords</title>
 	<!-- Dependencies -->
 	<?php include 'header.php';?>
 	<script src="js/passwordsJS.js"></script>
