@@ -23,7 +23,7 @@
             </div>
             <div class="col-lg-4 col-sm-6">
                 <img class="img-circle img-responsive img-center" src="img/dave.jpg" alt="">
-                <h3>David Evans, PhD</h3>
+                <h3>David Evans</h3>
                 <p class="small">PhD Computer Science</p>
                 <p class="small">Director of Security Research Group</p>
             </div>
