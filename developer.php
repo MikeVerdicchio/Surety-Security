@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Dependencies -->
-    <?php include 'dependencies.php';?>
-    <script src="js/videoJS.js"></script>
-
-</head>
-
-<body>
     <!-- Header and Navbar -->
     <?php include 'header.php';?>
-
+    <script src="js/videoJS.js"></script>
+</head>
+<body>
     <!-- Page Content -->
     <div class="container">
-
         <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
@@ -22,7 +15,6 @@
             </div>
         </div>
         <!-- /.row -->
-
         <!-- Video 1: What is Password Hashing? -->
         <div class="row">
             <div class="col-md-7">
@@ -37,9 +29,7 @@
             </div>
         </div>
         <!-- /.row -->
-
         <hr>
-
         <!-- Video 2: What is Cross-Site Scripting (XSS)? -->
         <div class="row">
             <div class="col-md-7">
@@ -54,16 +44,11 @@
             </div>
         </div>
         <!-- /.row -->
-
         <!-- Modal to show embedded YouTube video -->
 		<?php include 'showVideo.php';?>
-
         <!-- Footer -->
         <?php include 'footer.php';?>
-
     </div>
     <!-- /.container -->
-
 </body>
-
 </html>

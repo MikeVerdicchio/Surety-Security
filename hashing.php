@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
 	<!-- Dependencies -->
-	<?php include 'dependencies.php';?>
+	<?php include 'header.php';?>
 	<script src="js/hashingJS.js"></script>
 </head>
 <body>
-	<?php include 'header.php';?>
 	<br>
 	<div class="container-fluid">
 		<div class="row" style="text-align:center;">

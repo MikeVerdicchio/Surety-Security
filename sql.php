@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <title>SQL Injection</title>
-<?php include 'dependencies.php';?>
+<?php include 'header.php';	?>
 <body>
-	<?php include 'header.php';	?>
 	<div class="container-fluid">
 		<div class="row">
 			<h1 style="text-align:center;">SQL Injection</h1>
@@ -18,7 +17,7 @@
 				</div>
 			</form>
 		</div>
+		<?php include 'footer.php';?>
 	</div>
-	<?php include 'footer.php';?>
 </body>
 </html>
