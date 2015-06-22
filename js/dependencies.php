@@ -9,7 +9,7 @@
 <script src="/jquery.bootstrap-growl.js"></script>
 
 <!-- Javascript -->
-<script href="bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
 <!-- Custom Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>

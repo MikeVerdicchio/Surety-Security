@@ -1,3 +1,4 @@
+<?php include 'js/dependencies.php';?>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -50,5 +51,4 @@
         </div>
     </div>
 </nav>
-<?php include 'js/dependencies.php';?>
 <br>
