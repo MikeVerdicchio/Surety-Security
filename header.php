@@ -50,5 +50,5 @@
         </div>
     </div>
 </nav>
-<?php include '/js/dependencies.php';?>
+<?php include 'js/dependencies.php';?>
 <br>
