@@ -42,13 +42,36 @@
                     Username:
                     <input type="text" value="SuretySecurity" id="username">Password:
                     <input type="text" value="helloworld" id="password">
-                    <button type="button" id="submit">Login</button>
+                    <button type="button" id="login1" class="btn btn-primary" data-toggle="modal" data-target="#entercode">Login</button>
 
                     <div class="alert alert-info text-center" role="alert" id="response">
                         <strong>Attention! </strong>You have not been validated. Please log in.
                     </div>
                     <br>
                     <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="entercode" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="exampleModalLabel">Please enter authentication code:</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="message-text" id="message-intro" class="control-label"></label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="login2" class="btn btn-primary">Login</button>
+                    </div>
                 </div>
             </div>
         </div>
