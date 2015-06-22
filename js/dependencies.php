@@ -19,4 +19,4 @@
 
 <!-- Title and Favicon -->
 <title>Surety Security</title>
-<link rel="shortcut icon" href="../img/logo.ico">
+<link rel="shortcut icon" src="../img/logo.ico">
