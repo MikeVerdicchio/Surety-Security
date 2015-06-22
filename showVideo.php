@@ -7,7 +7,7 @@
                 <h4 class="modal-title" id="title"></h4>
             </div>
             <div class="modal-body">
-                <iframe width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+                <iframe width="560" height="315" frameborder="0" allowfullscreen="true"></iframe>
             </div>
         </div>
     </div>
