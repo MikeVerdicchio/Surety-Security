@@ -82,6 +82,9 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2" style="text-align:center;">
 				<span id="stored"></span>
+				<span><b><br>
+					this is the next comment</b><i><br>
+					and this one changes again</i></span>
 			</div>
 		</div>
 		<div class="row">
@@ -95,8 +98,10 @@
 			<div class="col-md-8 col-md-offset-2">
 				<select>
 					<script>
-					document.write("<OPTION value=1>"+document.location.href.substring(document.location.href.indexOf("default=")+8)+"</OPTION>");
-					document.write("<OPTION value=2>English</OPTION>");
+					document.write("<OPTION value=1>English</OPTION>");
+					//http://stackoverflow.com/questions/11582512/how-to-get-url-parameters-with-javascript for regex expression etting parameters
+					document.write("<OPTION value=2>"+decodeURIComponent((new RegExp('[?|&]' + 'option' + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))+"</OPTION>");
+					
 					</script>
 				</select>
 			</div>

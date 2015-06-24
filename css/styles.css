@@ -1,6 +1,8 @@
 body { font-family: 'Roboto Slab', serif; 
 	font-size: 16px;
 	line-height: 145%;
+	background-color: #F5F5F0;
+	color: #2C3539;
 }
 
 h1{
@@ -8,7 +10,7 @@ h1{
 }
 
 h2{
-	border-bottom: 2px solid #ddd;
+	border-bottom: 2px solid #D6D6C2;
 }
 
 p.small {
