@@ -16,3 +16,7 @@ h2{
 p.small {
     line-height: 10px;
 }
+
+pre{
+	background-color: #FFFFFF;
+}

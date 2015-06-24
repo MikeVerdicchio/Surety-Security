@@ -1,3 +1,3 @@
-function simulateStored() {
-	document.getElementById("stored").innerHTML = document.getElementById("val").value;
+function simulateSearch() {
+	document.getElementById("search").innerHTML = document.getElementById("val").value;
 }
