@@ -3,7 +3,6 @@
 <head>
 	<title>Cross Site Scripting</title>
 	<?php include 'header.php';?>
-	<script src="js/xssJS.js"></script>
 </head>
 <body>
 	<br>
@@ -34,24 +33,33 @@
 					<div class="col-md-2 col-md-offset-1">
 						Enter a search term:
 					</div>
+					<form action='' method="post">
 					<div class="col-md-4">
-						<input type='text' class='form-control' id='val'>
+						<input type='text' class='form-control' name='val'>
 					</div>
 					<div class="col-md-2">
-						<input type="submit" class="btn btn-default" value="Submit" onclick="simulateSearch()"><br>
+						<input type="submit" class="btn btn-default" value="Submit"><br>
 					</div>
+				</form>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-1">
-						<br>You searched for  <span id="search"></span><br>
+						<br>You searched for  
+						<?php
+						if (isset($_POST['val'])){
+							print_r($_POST['val']);
+						}
+						?>
+						<span id="search"></span><br>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<h2>Stored</h2>
 				Malicious code is stored on a website's servers as some form of data and when the data is requested
-				by the site it is executed as it is displayed to the user. In the example below, user6781 makes a comment
-				and embeddeds the comment with an onmouseover event on it. Try moving your mouse over
+				by the site it is executed as it is displayed to the user.
+				<h3>Example</h3>
+				In the example below, user6781 makes a comment and embeddeds the comment with an onmouseover event on it. Try moving your mouse over
 				the comment and see what happens. <br><br>
 			</div>
 			<div class="row" style="text-align:center;">
@@ -63,7 +71,7 @@
 			</div>
 			<div class="row">
 				<h2>DOM Based</h2>
-				Malicious code is injected into an element on a website. In the example below 
+				Malicious code is injected into an element on a website.
 			</div>
 			<div class="row">
 				<h3>Example</h3>
@@ -89,7 +97,7 @@
 				if (isset($_GET['xssparam'])){
 					$param = $_GET['xssparam'];
 				}
-				echo "<input type='hidden' value=".$param;
+				echo "<input type='hidden' value=".$param."></input>";
 				?>
 				This injects a HTML bold tag, which was injected by a GET parameter, for the value in the hidden input. This results in the hidden
 				input having the bold tag for its value and the rest of the page below the input being bold.<br><br>
