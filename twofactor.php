@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>Two-Factor Authentication</title>
-    <!-- Dependencies -->
     <?php include 'header.php';?>
     <script src="js/twofactorJS.js"></script>
 </head>
@@ -14,6 +13,7 @@
                 <h1>Two Factor Authentication</h1>
             </div>
         </div>
+		
         <div class="row">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -31,6 +31,7 @@
                     <br>A couple great Two Factor Authentication apps are <a href="https://www.google.com/landing/2step/">Google Authenticator</a> and <a href="https://www.authy.com/users">Authy</a>.
                 </div>
             </div>
+			
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2>Sample Login Using 2FA</h2>
@@ -43,11 +44,10 @@
                     <div class="alert alert-info text-center" role="alert" id="response">
                         <strong>Attention! </strong>You have not been validated. Please log in.
                     </div>
-                    <br>
-                    <br>
                 </div>
             </div>
         </div>
+		
         <div class="modal fade" id="entercode" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <?php include 'footer.php';?>
+
+		<?php include 'footer.php';?>
     </div>
 </body>

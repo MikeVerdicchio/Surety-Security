@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<title>Hashing</title>
-	<!-- Dependencies -->
 	<?php include 'header.php';?>
 	<script src="js/hashingJS.js"></script>
 </head>
@@ -14,6 +13,7 @@
 				<h1>Password Hashing</h1>
 			</div>
 		</div>
+		
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2>Hashing Passwords</h2>
@@ -41,6 +41,7 @@
 				older techniques are compromised.
 			</div>
 		</div>
+		
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2>Hash a String</h2>
@@ -54,6 +55,7 @@
 				<span id='result'></span>
 			</div>
 		</div>
+		
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2>Lookup a Hash</h2>
@@ -64,7 +66,7 @@
 				Powered by <a href="http://www.md5crack.com/">http://www.md5crack.com/</a> API
 			</div>
 		</div>
-		<!-- Footer -->
+
 		<?php include 'footer.php';?>
 	</div>
 </body>

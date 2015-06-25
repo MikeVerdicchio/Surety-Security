@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php include 'header.php';?>
 </head>
+
 <body>
-    <!-- Page Content -->
     <div class="container">
 
-        <!-- Introduction Row -->
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">About Us
@@ -16,7 +16,7 @@
                 <p>We're undergraduate students at the University of Virginia in Charlottesville, VA. Working with Professor David Evans, we are looking to create educational material dedicated to teaching computer security fundamentals to the general public and developers.</p>
             </div>
         </div>
-        <!-- Team Members Row -->
+
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">Our Team</h2>
@@ -58,9 +58,9 @@
                 <p class="small">University of Virginia 2017</p>
             </div>
         </div>
-        <!-- Footer -->
+
         <?php include 'footer.php';?>
     </div>
-    <!-- /.container -->
 </body>
+
 </html>
