@@ -3,7 +3,6 @@
 
 <head>
     <title>Passwords</title>
-    <!-- Dependencies -->
     <?php include 'header.php';?>
     <script src="js/passwordsJS.js"></script>
 </head>
@@ -39,10 +38,8 @@
                 <input type="text" id="password">
                 <br>Your password is hidden within a space of <span id="strength"> </span>
                 <br>This is based on the search space calculator on <a href='https://www.grc.com/haystack.htm'>https://www.grc.com/haystack.htm</a>
-                <br>
             </div>
         </div>
-        <!-- Footer -->
         <?php include 'footer.php';?>
     </div>
 </body>

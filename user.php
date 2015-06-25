@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Header and Navbar -->
     <?php include 'header.php';?>
     <script src="js/videoJS.js"></script>
 </head>
 <body>
-    <!-- Page Content -->
     <div class="container">
-        <!-- Page Heading -->
-        <div class="row">
+
+		<div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Videos <small>General Users</small></h1>
             </div>
         </div>
-        <!-- /.row -->
-        <!-- Video 1: What Makes a Strong Password? -->
+
+		<!-- Video 1: What Makes a Strong Password? -->
         <div class="row">
             <div class="col-md-7">
                 <a href="#">
@@ -28,8 +26,8 @@
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#showVideo" data-title="What Makes a Strong Password?" data-video="https://www.youtube.com/watch?v=8Vc7aTZkIww">View Video</button>
             </div>
         </div>
-        <!-- /.row -->
-        <hr>
+
+		<hr>
         <!-- Video 2: What is Two-Factor Authentication? -->
         <div class="row">
             <div class="col-md-7">
@@ -43,12 +41,12 @@
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#showVideo" data-title="What is Two-Factor Authentication?" data-video="https://www.youtube.com/watch?v=8Vc7aTZkIww">View Video</button>
             </div>
         </div>
-        <!-- /.row -->
-        <!-- Modal to show embedded YouTube video -->
+
+		<!-- Modal to show embedded YouTube video -->
         <?php include 'showVideo.php';?>
-        <!-- Footer -->
-        <?php include 'footer.php';?>
+
+		<?php include 'footer.php';?>
     </div>
-    <!-- /.container -->
-</body>
+
+	</body>
 </html>
