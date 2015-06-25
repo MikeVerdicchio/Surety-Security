@@ -13,7 +13,7 @@
                 <h1 class="page-header">About Us
                     <small>Web Security Team</small>
                 </h1>
-                <p>We're undergraduate students at the University of Virginia in Charlottesville, VA. Working with Professor David Evans, PhD, we are looking to create educational material dedicated to teaching computer security fundamentals to the general public and developers.</p>
+                <p>We're undergraduate students at the University of Virginia in Charlottesville, VA. Working with Professor David Evans, we are looking to create educational material dedicated to teaching computer security fundamentals to the general public and developers.</p>
             </div>
         </div>
         <!-- Team Members Row -->
