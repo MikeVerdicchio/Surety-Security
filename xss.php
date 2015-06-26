@@ -15,32 +15,47 @@
 				<h2>What is Cross Site Scripting?</h2>
 				Cross Site Scriping (XSS) is an injection attack in which a person enters in
 				malicious code, usually Javascript, into a website by some means. Another person then
-				views the website with the injected code which is then exucted as the browser can't
-				really tell the difference between the malicious and real code.
+				views the website with the injected code which is then executed as the browser can't
+				really tell the difference between the malicious injected code and real website code. A XSS attack can steal user data,
+				like cookies, modify the information on a site, redirect the user to another website, and install
+				malicious programs among other harmful operations.
+				There are three types of cross site scripting: Reflected, Stored, and DOM based.
 			</div>
 			<div class="row">
 				<h2>Reflected</h2>
-				Malicious code is sent as input to a server and the code is then "reflected" back to the user
-				and displayed (seen or unseen) somewhere on the page.
+				In a reflected XSS attack, malicious code is sent as input to a server. The server then "reflects" the
+				code back to a user's browser and is displayed (seen or unseen) somewhere on the page. This can be done
+				by a user clicking on a malignant link or through a virulent email.
 			</div>
 			<div class="row">
 				<h3>Example</h3>
 				This is a simplified version of a reflected attack. The user types in a search term into the input box
 				for the website to search on the web. This search term is taken in by the server and then reflected
-				back to the user to show what they searched for. If this input is not validated and output is not
-				sanitized, then code can get injected in an XSS attack.<br><br>
+				back to the user to show what they searched for verbatim. This allows a person to type in a malicious script that will
+				be executed by the browser becuase it interprets the input as code as it was not validated when inputted and not sanitized when outputted.
+				Put each of these code snipets in the search box and see what happens! The first example might not work with browsers that have a XSS filter.<br>
+				<pre><?php echo htmlspecialchars("<input onmouseover='alert(\"This can be used in a XSS attack\")'></input>");?></pre>
+				The code above will inject a input box that has a popup on mouseover into the page. This can be modified to be more discrete and activate every time,
+				like changing onmouseover to onload and the text input box to a hidden input.
+				<div class="row">
+					<div class="col-md-1">
+						<pre><?php echo htmlspecialchars("<b><i>");?></pre>
+					</div>
+				</div>
+				The code above will modify the rest of the page by changing the text to bold and italics. This can be modified to completely change the page's
+				layout in a way that resembles another website or adding additional elements to the site.<br><br>
 				<div class="row">
 					<div class="col-md-2 col-md-offset-1">
 						Enter a search term:
 					</div>
 					<form action='' method="post">
-					<div class="col-md-4">
-						<input type='text' class='form-control' name='val'>
-					</div>
-					<div class="col-md-2">
-						<input type="submit" class="btn btn-default" value="Submit"><br>
-					</div>
-				</form>
+						<div class="col-md-4">
+							<input type='text' class='form-control' name='val'>
+						</div>
+						<div class="col-md-2">
+							<input type="submit" class="btn btn-default" value="Submit"><br>
+						</div>
+					</form>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-1">
@@ -56,10 +71,10 @@
 			</div>
 			<div class="row">
 				<h2>Stored</h2>
-				Malicious code is stored on a website's servers as some form of data and when the data is requested
-				by the site it is executed as it is displayed to the user.
+				A malicious user inputs malignant code on a website through a data input, like a comment or post, and gets stored on a website’s servers.
+				When the data is requested by the site, it retrieves the lethal code that was inputted.
 				<h3>Example</h3>
-				In the example below, user6781 makes a comment and embeddeds the comment with an onmouseover event on it. Try moving your mouse over
+				In the example below, user6781 makes a comment and embeds the comment with an onmouseover event on it. Try moving your mouse over
 				the comment and see what happens. <br><br>
 			</div>
 			<div class="row" style="text-align:center;">
@@ -71,36 +86,32 @@
 			</div>
 			<div class="row">
 				<h2>DOM Based</h2>
-				Malicious code is injected into an element on a website.
+				Malicious code is injected into the DOM on a website. This is different than a reflected attack as a DOM attack doesn’t modify the server response,
+				but rather modifies the client side code.
 			</div>
 			<div class="row">
 				<h3>Example</h3>
 				This is an example of a XSS attack in which an object on the page is automatically
 				filled in with a parameter in the URL. The parameter is not sanitized before being
 				put into the object which can result in code being passed in.
-				<br><code>$param = '';
+				<br><code>
 				if (isset($_GET&#91;'xssparam'&#93;)){
-				$param = $_GET&#91;'xssparam'&#93;;}
-				echo "&lt;input type='hidden' value=".$param."&gt;";</code><br>
-				The code sets a hidden input's value to the GET paramater value directly without
-				checking if the value is safe and valid.<br>
-				Put either of these code snipets at the end of the url and see what happens!
-				The first example might not work with some browsers, as they might block anything with
-				the script tag.
-				<pre><?php echo htmlspecialchars("?xssparam=><script type='text/javascript'>document.body.innerHTML = '';</script>");?></pre>
-				This is a very basic Javascript line of code that sets the html document body to blank, but this isn't the only thing a hacker can do.
-				Rearranging the site's layout and adding or removing elements are just a couple of the things possible with Javascript manipulation.
-				Most browsers block any url with the script tag to provide users protection against such URL attacks.
-				<pre><?php echo htmlspecialchars("?xssparam=><b>");?></pre>
+					echo "&lt;select&gt;
+					&lt;option value=1&gt;".$_GET['xssparam']."&lt;/option&gt;
+					&lt;/select&gt;"
+				}</code><br>
+				The code sets a hidden input's value to the GET paramater value directly without checking if the value is safe and valid.<br>
+				Put this code snipet at the end of the url and see what happens! The example might not work with some browsers, as they have strict XSS filtering.
+				<pre><?php echo htmlspecialchars("?xssparam=<script>alert(\"This can be used in a XSS attack\"</script>");?></pre>
+				This will set the displayed text for a select option to an be the code for a javascript popup. This doesn't require the browser to make any 
+				request from to server, this only changes the client side code.
 				<?php
-				$param = "";
 				if (isset($_GET['xssparam'])){
-					$param = $_GET['xssparam'];
+					echo "<select>
+					<option value=1>".$_GET['xssparam']."</option>
+					</select>";
 				}
-				echo "<input type='hidden' value=".$param."></input>";
 				?>
-				This injects a HTML bold tag, which was injected by a GET parameter, for the value in the hidden input. This results in the hidden
-				input having the bold tag for its value and the rest of the page below the input being bold.<br><br>
 			</div>
 		</div>
 		<?php include 'footer.php';?>
