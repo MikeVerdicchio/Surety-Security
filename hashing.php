@@ -59,7 +59,7 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2>Lookup a Hash</h2>
-				Type in a hash to be looked up
+				Type in a MD5 hash to be looked up
 				<input type='text' id="toCrack">
 				<input type='submit' class='btn btn-default' onclick="hashLookup()">
 				<span id='crack'></span><br>

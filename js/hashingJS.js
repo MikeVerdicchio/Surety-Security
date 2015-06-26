@@ -7,7 +7,7 @@ function hash() {
 			document.getElementById("result").innerHTML = xmlhttp.responseText;
 		}
 	}
-	xmlhttp.open("GET", "hash.php?string=" + str + "&hash=" + hash);
+	xmlhttp.open("GET", "phpScripts/hash.php?string=" + str + "&hash=" + hash);
 	xmlhttp.send();
 }
 function hashLookup() {
@@ -18,6 +18,6 @@ function hashLookup() {
 			document.getElementById("crack").innerHTML = xmlhttp.responseText;
 		}
 	}
-	xmlhttp.open("GET", "hashlookup.php?hash=" + toCrack);
+	xmlhttp.open("GET", "phpScripts/hashlookup.php?hash=" + toCrack);
 	xmlhttp.send();
 }
