@@ -102,7 +102,7 @@
 				}</code><br>
 				The code sets a hidden input's value to the GET paramater value directly without checking if the value is safe and valid.<br>
 				Put this code snipet at the end of the url and see what happens! The example might not work with some browsers, as they have strict XSS filtering.
-				<pre><?php echo htmlspecialchars("?xssparam=<script>alert(\"This can be used in a XSS attack\"</script>");?></pre>
+				<pre><?php echo htmlspecialchars("?xssparam=<script>alert(\"This can be used in a XSS attack\")</script>");?></pre>
 				This will set the displayed text for a select option to an be the code for a javascript popup. This doesn't require the browser to make any 
 				request from to server, this only changes the client side code.
 				<?php

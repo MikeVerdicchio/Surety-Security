@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>SQL Injection</title>
 <?php include 'header.php';	?>
+</head>
 <body>
+	<br>
 	<div class="container-fluid">
 		<div class="row">
 			<h1 style="text-align:center;">SQL Injection</h1>
 		</div>
+				<div class="col-md-8 col-md-offset-2">
 		<div class="row">
-			<form action="sqlForSqlPage.php" method="post" class="form-horizontal">
-				<div class="col-md-3 col-md-offset-4">
-					<input type='text' class='form-control' name='username'>
-				</div>
-				<div class="col-md-1">
-					<input type="submit" class="btn btn-default" value="Submit">
-				</div>
-			</form>
+			<h2>What is SQL Injection</h2>
+		</div>
 		</div>
 		<?php include 'footer.php';?>
 	</div>
