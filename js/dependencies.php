@@ -1,3 +1,13 @@
+<!-- Meta Tags -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Surety Security">
+
+<!-- Title and Favicon -->
+<title>Surety Security</title>
+<link rel="shortcut icon" src="../img/logo.ico">
+
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 
@@ -18,7 +28,3 @@
 
 <!-- Custom CSS -->
 <link href="../css/styles.css" rel="stylesheet">
-
-<!-- Title and Favicon -->
-<title>Surety Security</title>
-<link rel="shortcut icon" src="../img/logo.ico">
