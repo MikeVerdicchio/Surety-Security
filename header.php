@@ -30,10 +30,8 @@
                     <ul class="dropdown-menu">
                         <li><a href="/xss">Overview</a>
                         </li>
-                        <!--
                         <li><a href="/xssprevention">Prevention</a>
                         </li>
-                        -->
                     </ul>
                 </li>
                 <!--
