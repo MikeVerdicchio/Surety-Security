@@ -43,7 +43,7 @@
 				speical characters so the submission isn't interpreted as code.
 			</div>
 			<div class="row">
-				<h2>Accoutning for All Untrusted Data on the Site</h2>
+				<h2>Accounting for All Untrusted Data on the Site</h2>
 				The most important thing in preventing cross site scripting is making sure all untrusted data
 				that is coming into the site is handled properly. Any data that the user inputs should be
 				considered to be untrusted data, as the developer should assume someone not using their site
