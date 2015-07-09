@@ -24,7 +24,7 @@
                         </li>
                     </ul>
                 </li>
-                
+
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cross Site Scripting<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -53,16 +53,18 @@
                         </li>
                     </ul>
                 </li>
+                -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Videos <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/user">General User</a>
+                        <li><a href="/user">End User</a>
                         </li>
+                        <!--
                         <li><a href="/developer">Developer</a>
                         </li>
+						-->
                     </ul>
                 </li>
-                -->
                 <li><a href="/about">About</a>
                 </li>
             </ul>

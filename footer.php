@@ -11,3 +11,5 @@
         </div>
     </div>
 </footer>
+
+<?php include_once("phpScripts/analytics.php") ?>
