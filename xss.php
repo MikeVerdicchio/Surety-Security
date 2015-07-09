@@ -36,14 +36,7 @@
 				Put each of these code snipets in the search box and see what happens! The first example might not work with browsers that have a XSS filter.<br>
 				<pre><?php echo htmlspecialchars("<input onmouseover='alert(\"This can be used in a XSS attack\")'></input>");?></pre>
 				The code above will inject a input box that has a popup on mouseover into the page. This can be modified to be more discrete and activate every time,
-				like changing onmouseover to onload and the text input box to a hidden input.
-				<div class="row">
-					<div class="col-md-1">
-						<pre><?php echo htmlspecialchars("<b><i>");?></pre>
-					</div>
-				</div>
-				The code above will modify the rest of the page by changing the text to bold and italics. This can be modified to completely change the page's
-				layout in a way that resembles another website or adding additional elements to the site.<br><br>
+				like changing onmouseover to onload and the text input box to a hidden input.<br><br>
 				<div class="row">
 					<div class="col-md-2 col-md-offset-1">
 						Enter a search term:
@@ -96,20 +89,16 @@
 				put into the object which can result in code being passed in.
 				<br><code>
 				if (isset($_GET&#91;'xssparam'&#93;)){
-					echo "&lt;select&gt;
-					&lt;option value=1&gt;".$_GET['xssparam']."&lt;/option&gt;
-					&lt;/select&gt;"
+					echo "&lt;span&gt;Hello ".$_GET['xssparam']."!&lt;/span&gt;"
 				}</code><br>
 				The code sets a hidden input's value to the GET paramater value directly without checking if the value is safe and valid.<br>
 				Put this code snipet at the end of the url and see what happens! The example might not work with some browsers, as they have strict XSS filtering.
 				<pre><?php echo htmlspecialchars("?xssparam=<script>alert(\"This can be used in a XSS attack\")</script>");?></pre>
 				This will set the displayed text for a select option to an be the code for a javascript popup. This doesn't require the browser to make any 
-				request from to server, this only changes the client side code.
+				request from to server, this only changes the client side code.<br><br>
 				<?php
 				if (isset($_GET['xssparam'])){
-					echo "<select>
-					<option value=1>".$_GET['xssparam']."</option>
-					</select>";
+					echo "<span>Hello ".$_GET['xssparam']."!</span>";
 				}
 				?>
 			</div>
