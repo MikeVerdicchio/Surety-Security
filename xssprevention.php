@@ -39,8 +39,8 @@
 				what the user injected.
 				<h3>Javascript/CSS Escaping</h3>
 				If the code makes the user have some sort of input that results in it being put in
-				Javascript or CSS code, the input must be ecaped. Escaping is the encoding of
-				speical characters so the submission isn't interpreted as code.
+				Javascript or CSS code, the input must be escaped. Escaping is the encoding of
+				special characters so the submission isn't interpreted as code.
 			</div>
 			<div class="row">
 				<h2>Accounting for All Untrusted Data on the Site</h2>
@@ -54,13 +54,13 @@
 				<h2>Content Security Policy</h2>
 				Having a Content Security Policy adds another level of security onto a website for users.
 				This allows the developer to control what resources are being loaded onto the page and where
-				they originate from. This is a type of whitelisting as only allowing resouces from trusted
-				pages or just restricting to running scripts from the site itself can elminate malicious
+				they originate from. This is a type of whitelisting as only allowing resources from trusted
+				pages or just restricting to running scripts from the site itself can eliminate malicious
 				code from being injected into the site.
 			</div>
 			<div class="row">
 				<h2>Using XSS prevention libraries</h2>
-				There are many code libaries built to help developers in defending against XSS, though these 
+				There are many code libraries built to help developers in defending against XSS, though these 
 				libraries shouldn't be relied upon solely as the only defense.
 				<br>
 				<br>

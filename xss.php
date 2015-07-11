@@ -13,7 +13,7 @@
 		<div class="col-md-8 col-md-offset-2">
 			<div class="row">
 				<h2>What is Cross Site Scripting?</h2>
-				Cross Site Scriping (XSS) is an injection attack in which a person enters in
+				Cross Site Scripting (XSS) is an injection attack in which a person enters in
 				malicious code, usually Javascript, into a website by some means. Another person then
 				views the website with the injected code which is then executed as the browser can't
 				really tell the difference between the malicious injected code and real website code. A XSS attack can steal user data,
@@ -32,8 +32,8 @@
 				This is a simplified version of a reflected attack. The user types in a search term into the input box
 				for the website to search on the web. This search term is taken in by the server and then reflected
 				back to the user to show what they searched for verbatim. This allows a person to type in a malicious script that will
-				be executed by the browser becuase it interprets the input as code as it was not validated when inputted and not sanitized when outputted.
-				Put each of these code snipets in the search box and see what happens! The first example might not work with browsers that have a XSS filter.<br>
+				be executed by the browser because it interprets the input as code as it was not validated when inputted and not sanitized when outputted.
+				Put each of these code snippets in the search box and see what happens! The first example might not work with browsers that have a XSS filter.<br>
 				<pre><?php echo htmlspecialchars("<input onmouseover='alert(\"This can be used in a XSS attack\")'></input>");?></pre>
 				The code above will inject a input box that has a popup on mouseover into the page. This can be modified to be more discrete and activate every time,
 				like changing onmouseover to onload and the text input box to a hidden input.<br><br>
@@ -75,7 +75,7 @@
 			</div>
 			<div class="row">
 				If a website doesn't sanitize the input coming into a site, like a comment or a post on a forum, then it stores whatever the user inputs directly
-				into the database. This can be very dangerous on a site that diplays a lot of user input like Reddit or any comment section on a news site.
+				into the database. This can be very dangerous on a site that displays a lot of user input like Reddit or any comment section on a news site.
 			</div>
 			<div class="row">
 				<h2>DOM Based</h2>
@@ -91,8 +91,8 @@
 				if (isset($_GET&#91;'xssparam'&#93;)){
 				echo "&lt;span&gt;Hello ".$_GET['xssparam']."!&lt;/span&gt;"
 			}</code><br>
-			The code sets a hidden input's value to the GET paramater value directly without checking if the value is safe and valid.<br>
-			Put this code snipet at the end of the url and see what happens! The example might not work with some browsers, as they have strict XSS filtering.
+			The code sets a hidden input's value to the GET parameter value directly without checking if the value is safe and valid.<br>
+			Put this code snippet at the end of the url and see what happens! The example might not work with some browsers, as they have strict XSS filtering.
 			<pre><?php echo htmlspecialchars("?xssparam=<script>alert(\"This can be used in a XSS attack\")</script>");?></pre>
 			This will set the displayed text for a select option to an be the code for a javascript popup. This doesn't require the browser to make any 
 			request from to server, this only changes the client side code.<br><br>

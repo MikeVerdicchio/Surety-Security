@@ -21,13 +21,13 @@
 				data in a plaintext format. If the database becomes compromised and an outside user obtains access, all of
 				the passwords are visible without any outside work required to crack the passwords. Password hashing makes it harder for someone to get
 				the correct password even when having access to the database.<br><br>
-				A password hash is a cryptogrphic technique that takes in a password and outputs a completely different string. For example 123456 turns into
+				A password hash is a cryptographic technique that takes in a password and outputs a completely different string. For example 123456 turns into
 				8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92 using SHA-256. A hash is a one way street, once
 				the password is turned into a hash, there is no way to go from the hash to the password. This makes it very hard to
 				determine what password goes with the associated hash. However, some methods of hashing aren't considered to be secure
 				anymore. Some hashes have precomputed password hash dictionaries that are associated with them that stores a password with its
 				associated hash. This makes the job very easy for hackers as the only thing they have to do is type in the hash and
-				the password with be returned from the table.<br><br>
+				the password will be returned from the table.<br><br>
 				As a defense against precomputed password hash dictionaries, a salt can be added to a password. A salt is a randomly generated string that is
 				added to a password, which can make the password hash to a different string. For example, password + "kdjlkajdiI" and
 				password + "eirupqweor" will hash differently despite them being the same password. The only drawback to using salt

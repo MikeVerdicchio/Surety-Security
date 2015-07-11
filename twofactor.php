@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h2>Two Factor Authentication</h2>
-                Having a strong password is one way to avoid having one's account being compromised on the internet. Two factor authentication is another way to greatly increase the security on an account. Two factor authentication contains two of three things
+                Having a strong password is one way to avoid having one's account being compromised on the internet. Two factor authentication is another way to greatly increase the security on an account. It contains two of three things
                 <ul>
                     <li>Something you are (fingerprint)</li>
                     <li>Something you have (generated key from an app or a security card)</li>
