@@ -66,6 +66,13 @@
 				Powered by <a href="http://www.md5crack.com/">http://www.md5crack.com/</a> API
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2>External Resources</h2>
+				<a href="https://www.youtube.com/watch?v=8ZtInClXe1Q">Computerphile - How NOT to Store Passwords! Video</a> <br>
+				<a href="https://crackstation.net/hashing-security.htm">Crackstation - Doing Password Hashing Right</a>
+			</div>
+		</div>
 
 		<?php include 'footer.php';?>
 	</div>

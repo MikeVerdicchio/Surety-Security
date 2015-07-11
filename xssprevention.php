@@ -65,6 +65,12 @@
 				<br>
 				<br>
 			</div>
+			<div class="row">
+				<h2>External Resources</h2>
+				<a href="https://www.youtube.com/watch?v=UnSJ89zGkEs">In-Depth Video on XSS defense</a><br>
+				<a href="https://www.youtube.com/watch?v=_jubb3g1HVg">XSS Defense Video by Jeremy Stashewsky</a><br>
+				<a href="https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet">OWASP XSS Prevention Cheat Sheet</a>
+			</div>
 		</div>
 		<!-- Footer -->
 		<?php include 'footer.php';?>

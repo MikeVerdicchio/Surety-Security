@@ -40,6 +40,13 @@
                 <br>This is based on the search space calculator on <a href='https://www.grc.com/haystack.htm'>https://www.grc.com/haystack.htm</a>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>External Resources</h2>
+                <a href="http://blog.codinghorror.com/your-password-is-too-damn-short/">Coding Horror Post About Password Length</a> <br>
+                <a href="https://www.praetorian.com/blog/statistics-will-crack-your-password-mask-structure">Password Cracking Overview</a>
+            </div>
+        </div>
         <?php include 'footer.php';?>
     </div>
 </body>

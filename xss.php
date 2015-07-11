@@ -89,21 +89,27 @@
 				put into the object which can result in code being passed in.
 				<br><code>
 				if (isset($_GET&#91;'xssparam'&#93;)){
-					echo "&lt;span&gt;Hello ".$_GET['xssparam']."!&lt;/span&gt;"
-				}</code><br>
-				The code sets a hidden input's value to the GET paramater value directly without checking if the value is safe and valid.<br>
-				Put this code snipet at the end of the url and see what happens! The example might not work with some browsers, as they have strict XSS filtering.
-				<pre><?php echo htmlspecialchars("?xssparam=<script>alert(\"This can be used in a XSS attack\")</script>");?></pre>
-				This will set the displayed text for a select option to an be the code for a javascript popup. This doesn't require the browser to make any 
-				request from to server, this only changes the client side code.<br><br>
-				<?php
-				if (isset($_GET['xssparam'])){
-					echo "<span>Hello ".$_GET['xssparam']."!</span>";
-				}
-				?>
-			</div>
+				echo "&lt;span&gt;Hello ".$_GET['xssparam']."!&lt;/span&gt;"
+			}</code><br>
+			The code sets a hidden input's value to the GET paramater value directly without checking if the value is safe and valid.<br>
+			Put this code snipet at the end of the url and see what happens! The example might not work with some browsers, as they have strict XSS filtering.
+			<pre><?php echo htmlspecialchars("?xssparam=<script>alert(\"This can be used in a XSS attack\")</script>");?></pre>
+			This will set the displayed text for a select option to an be the code for a javascript popup. This doesn't require the browser to make any 
+			request from to server, this only changes the client side code.<br><br>
+			<?php
+			if (isset($_GET['xssparam'])){
+				echo "<span>Hello ".$_GET['xssparam']."!</span>";
+			}
+			?>
 		</div>
-		<?php include 'footer.php';?>
+		<div class="row">
+			<h2>External Resources</h2>
+			<a href="https://www.youtube.com/watch?v=L5l9lSnNMxg">Computerphile - Cracking Websites with Cross Site Scripting Video</a><br>
+			<a href="https://www.owasp.org/index.php?title=Cross-site_Scripting_%28XSS%29&setlang=es">OWASP - Cross Site Scripting</a><br>
+			<a href="https://www.youtube.com/watch?v=yzJG7GPuFyo">Short Video Overview of XSS</a>
+		</div>
 	</div>
+	<?php include 'footer.php';?>
+</div>
 </body>
 </html>
