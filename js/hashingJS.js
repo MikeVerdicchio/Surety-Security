@@ -21,3 +21,13 @@ function hashLookup() {
 	xmlhttp.open("GET", "phpScripts/hashlookup.php?hash=" + toCrack);
 	xmlhttp.send();
 }
+
+function problem1(){
+	var hash = $('#prob1str').val();
+	if(hash == "security5"){
+		document.getElementById("prob1ans").innerHTML = "Correct!";
+	}
+	else{
+		document.getElementById("prob1ans").innerHTML = "Incorrect";
+	}
+}

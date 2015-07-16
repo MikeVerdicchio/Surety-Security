@@ -41,6 +41,8 @@
                     <ul class="dropdown-menu">
                         <li><a href="/ssltls">SSL/TLS</a>
                         </li>
+                        <li><a href="/handshake">TLS Handhsake</a>
+                            </li>
                         <li><a href="/maninmiddle">Man in Middle</a>
                         </li>
                     </ul>

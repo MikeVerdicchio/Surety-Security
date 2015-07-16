@@ -8,14 +8,11 @@
 <body>
 	<br>
 	<div class="container-fluid">
-		<div class="row" style="text-align:center;">
-			<div class="col-md-8 col-md-offset-2">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="row" style="text-align:center;">
 				<h1>Password Hashing</h1>
 			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="row">
 				<h2>Hashing Passwords</h2>
 				When designing an application that requires the user to login with a password, the developer should not store this
 				data in a plaintext format. If the database becomes compromised and an outside user obtains access, all of
@@ -40,10 +37,7 @@
 				to login. It's important to always stay current with password storage methods as over time newer methods are found or
 				older techniques are compromised.
 			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="row">
 				<h2>Hash a String</h2>
 				Type in a string to be hashed 
 				<input type='text' id="str"> 
@@ -54,10 +48,7 @@
 				<input type='submit' class='btn btn-default' onclick="hash()">
 				<span id='result'></span>
 			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="row">
 				<h2>Lookup a Hash</h2>
 				Type in a MD5 hash to be looked up
 				<input type='text' id="toCrack">
@@ -65,15 +56,20 @@
 				<span id='crack'></span><br>
 				Powered by <a href="http://www.md5crack.com/">http://www.md5crack.com/</a> API
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="row">
+				<h2>Problem 1</h2>
+				You find a piece of paper on the ground with a hash written on it b2568979648e8c2364eac353b9fee7b358741ddc82dd262b9dbc4176b03e7fff
+				What value does this hash go to?
+				<input type='text' id="prob1str">
+				<input type='submit' onclick="problem1()">
+				<b><span id='prob1ans'></span></b>
+			</div>
+			<div class="row">
 				<h2>External Resources</h2>
 				<a href="https://www.youtube.com/watch?v=8ZtInClXe1Q">Computerphile - How NOT to Store Passwords! Video</a> <br>
 				<a href="https://crackstation.net/hashing-security.htm">Crackstation - Doing Password Hashing Right</a>
 			</div>
 		</div>
-
 		<?php include 'footer.php';?>
 	</div>
 </body>
