@@ -32,6 +32,8 @@
                         </li>
                         <li><a href="/xssprevention">Prevention</a>
                         </li>
+                        <li><a href="/xsslevel1">Level 1 Tasks</a>
+                        </li>
                     </ul>
                 </li>
                 <!--
