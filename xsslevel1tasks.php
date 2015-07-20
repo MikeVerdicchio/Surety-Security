@@ -41,10 +41,10 @@
 				<a href="/xssregister">Click here to register for the daily newsletter!</a>
 			</div>
 			<div class="col-md-2 col-md-offset-6">
-				<input type="text" class="form-control">
+				<input type="text" class="form-control" id="term">
 			</div>
 			<div class="col-md-1">
-				<input type="button" value="Search">
+				<input type="button" value="Search" onclick="search()">
 			</div>
 			<div class="col-md-12">
 				<h2>HEADLINES TODAY</h2>

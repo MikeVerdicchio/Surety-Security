@@ -6,6 +6,10 @@ function register(){
 	var username = $('#username').val();
 	window.location.replace("/xsslevel1tasks?username=" +username);
 }
+function search(){
+	var term = $('#term').val();
+	window.location.href =("/xsssearch?term=" + term);
+}
 function urlInterpret(){
 	var url = document.createElement("a");
 	url.href = $('#url').val();
