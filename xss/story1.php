@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<?php
+header('X-XSS-Protection: 0');
+?>
 <html lang="en">
 <head>
 	<title>Sample Story</title>
-	<?php include 'js/dependencies.php';?>
-	<script src="js/xsslevel1.js"></script>
+	<?php include '../js/dependencies.php';?>
+	<script src="../js/xsslevel1.js"></script>
 </head>
 <body>
 	<br>

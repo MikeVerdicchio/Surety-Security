@@ -5,8 +5,8 @@ header('X-XSS-Protection: 0');
 <html lang="en">
 <head>
 	<title>Level 1 Tasks</title>
-	<?php include 'js/dependencies.php';?>
-	<script src="js/xsslevel1.js"></script>
+	<?php include '../js/dependencies.php';?>
+	<script src="../js/xsslevel1.js"></script>
 </head>
 <body>
 	<br>
@@ -16,15 +16,15 @@ header('X-XSS-Protection: 0');
 				<?php
 				echo "<input type='text' class='form-control'";
 				if(isset($_GET['term'])){
-					echo "value='http://newscache.com?term=" . $_GET['term'] ."' id='url'>";
+					echo "value='http://newscache.com/search?term=" . $_GET['term'] ."' id='url'>";
 				}
 				else{
-					echo "value='http://newscache.com' id='url'>";
+					echo "value='http://newscache.com/search?term=' id='url'>";
 				}
 				?>
 			</div>
 			<div class="col-md-2">
-				<input type="button" value="Go">
+				<input type="button" value="Go" onclick="urlInterpret();">
 			</div>
 		</div>
 		<div class="row">

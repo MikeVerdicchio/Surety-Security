@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<?php
+header('X-XSS-Protection: 0');
+?>
 <html lang="en">
 <head>
 	<title>Level 1 Tasks</title>
-	<?php include 'js/dependencies.php';?>
-	<script src="js/xsslevel1.js"></script>
+	<?php include '../js/dependencies.php';?>
+	<script src="../js/xsslevel1.js"></script>
 </head>
 <body>
 	<br>
@@ -13,10 +16,10 @@
 				<?php
 				echo "<input type='text' class='form-control'";
 				if(isset($_GET['username'])){
-					echo "value='http://newscache.com?username=" . $_GET['username'] ."' id='url'>";
+					echo "value='http://newscache.com/home?username=" . $_GET['username'] ."' id='url'>";
 				}
 				else{
-					echo "value='http://newscache.com' id='url'>";
+					echo "value='http://newscache.com/home' id='url'>";
 				}
 				?>
 			</div>
@@ -38,7 +41,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-3">
-				<a href="/xssregister">Click here to register for the daily newsletter!</a>
+				<a href="/xss/register">Click here to register for the daily newsletter!</a>
 			</div>
 			<div class="col-md-2 col-md-offset-6">
 				<input type="text" class="form-control" id="term">
@@ -49,7 +52,7 @@
 			<div class="col-md-12">
 				<h2>HEADLINES TODAY</h2>
 				<ul>
-					<li>Is too much salt really detremental to a healthy lifestyle?<a href="/samplestory1"> Link to article and discussion</a></li>
+					<li>Is too much salt really detremental to a healthy lifestyle?<a href="/xss/story1"> Link to article and discussion</a></li>
 					<li>Panda bear spotted in California forest</li>
 					<li>Washington Nationals make it to the World Series</li>
 					<li>One way websites are being hacked that you won't beleve!</li>

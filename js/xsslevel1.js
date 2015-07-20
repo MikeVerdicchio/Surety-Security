@@ -4,14 +4,15 @@ function postComment(){
 }
 function register(){
 	var username = $('#username').val();
-	window.location.replace("/xsslevel1tasks?username=" +username);
+	window.location.replace("/xss/home?username=" +username);
 }
 function search(){
 	var term = $('#term').val();
-	window.location.href =("/xsssearch?term=" + term);
+	window.location.href =("/xss/search?term=" + term);
 }
 function urlInterpret(){
 	var url = document.createElement("a");
 	url.href = $('#url').val();
-	console.log(url.pathname);
+	console.log(url.search);
+	window.location.href = ("/xss"+url.pathname + url.search);
 }
