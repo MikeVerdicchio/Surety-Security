@@ -29,7 +29,7 @@ header('X-XSS-Protection: 0');
 				<h2>Written by: Tony Smith, Freelance Writer</h2>
 			</div>
 			<div class="col-md-12">
-				Today I ate a Chipotle buritto, canned chicken noodle soup, and pizza. This lead to me drinking around a galloon of water just this afternoon as all of the salt in the food made me very thirsty, but I have never felt better. Many people say that a diet high in sodium is bad and that it can lead to very bad health concerns. I don't think this is quite the case as I did my own research this past year. I also don't think that limiting our food consumption based on the nutritional values in the food is a good idea. People should eat what they wan't.
+				Today I ate a Chipotle buritto, canned chicken noodle soup, and pizza. This lead to me drinking around a galloon of water just this afternoon as all of the salt in the food made me very thirsty, but I have never felt better. Many people say that a diet high in sodium is bad and that it can lead to very bad health concerns. I don't think this is quite the case as I did my own research this past year. I also don't think that limiting our food consumption based on the nutritional values in the food is a good idea. People should eat what they want.
 			</div>
 		</div>
 		<div class="row">

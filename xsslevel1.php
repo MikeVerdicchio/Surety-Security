@@ -27,17 +27,18 @@
 		<div class="col-md-6">
 			<br>
 			<ul>
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
+				<li><span id='1'>Find a way to get the script, src='/js/xsssuccess.js', to execute through the search function</span></li>
+				<li><span id='2'>2</span></li>
+				<li><span id='3'>3</span></li>
+				<li><span id='4'>4</span></li>
+				<li><span id='5'>5</span></li>
 			</ul>
 		</div>
 	</div>
 	<div class="row embed-responsive embed-responsive-16by9">
 		<iframe class="embed-responsive-item col-md-12" src="/xss/home.php" style="border: 3px solid black;"></iframe>
 	</div>
+	<span id="demo"></span>
 
 	<!-- Footer -->
 	<?php include 'footer.php';?>
