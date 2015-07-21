@@ -55,7 +55,7 @@ header('X-XSS-Protection: 0');
 					<li>Is too much salt really detremental to a healthy lifestyle?<a href="/xss/story1"> Link to article and discussion</a></li>
 					<li>Panda bear spotted in California forest</li>
 					<li>Washington Nationals make it to the World Series</li>
-					<li>One way websites are being hacked that you won't beleve!</li>
+					<li>One way websites are being hacked that you won't believe!</li>
 				</ul>
 			</div>
 			<div class="col-md-12">
