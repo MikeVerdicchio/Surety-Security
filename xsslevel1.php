@@ -25,13 +25,11 @@
 			The objective for this learning module is to complete the tasks on the left on the website below. The website below is embedded in an iframe, so please do no refresh the page or else all progress will be lost!
 		</div>
 		<div class="col-md-6">
-			<br>
+			<br><br>
 			<ul>
 				<li><span id='1'>Find a way to get the script, src='/js/xsssuccess.js', to execute through the search function</span></li>
-				<li><span id='2'>2</span></li>
-				<li><span id='3'>3</span></li>
-				<li><span id='4'>4</span></li>
-				<li><span id='5'>5</span></li>
+				<li><span id='2'>Register</span></li>
+				<li><span id='3'>Comment</span></li>
 			</ul>
 		</div>
 	</div>
