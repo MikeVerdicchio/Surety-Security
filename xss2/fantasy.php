@@ -24,18 +24,18 @@ header('X-XSS-Protection: 0');
 				<h2>Fantasy Selections</h2>
 			</div>
 			<div class="col-md-4" style="text-align:center;">
-				<img src="/img/gameofthrones.jpg"><br>
-				<a href="/xss2/gameofthrones">Buy Game of Thrones</a>
+				<img src="/img/1.jpg"><br>
+				<a href="/xss2/item?id=1">Buy Game of Thrones</a>
 				$9.99
 			</div>
 			<div class="col-md-4" style="text-align:center;">
-				<img src="/img/fellowship.jpg"><br>
-				<a href="/xss2/fellowship">Buy Fellowship of the Ring</a>
+				<img src="/img/2.jpg"><br>
+				<a href="/xss2/item?id=2">Buy Fellowship of the Ring</a>
 				$8.62
 			</div>
 			<div class="col-md-4" style="text-align:center;">
-				<img src="/img/underthesea.jpg"><br>
-				<a href="/xss2/underthesea">Buy Twenty Thousand Leagues Under the Sea</a>
+				<img src="/img/3.jpg"><br>
+				<a href="/xss2/item?id=3">Buy Twenty Thousand Leagues Under the Sea</a>
 				$24,000
 			</div>
 		</div>
