@@ -34,17 +34,6 @@ header('X-XSS-Protection: 0');
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<h2>Most Recent Comment</h2>
-			</div>
-			<div class="col-md-2">
-				<b>Username: </b><span id="username">lost404</span>
-			</div>
-			<div class="col-md-10">
-				<b>Comment: </b><span id="comment">Great writing, but I really don't agree with the concept of what you're trying to get across here.</span>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
 				<h2>Post a New Comment</h2>
 			</div>
 			<div class="col-md-1">
@@ -65,10 +54,17 @@ header('X-XSS-Protection: 0');
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<table class="table tabled striped">
+				<h2>All Comments</h2>
+			</div>
+			<div class="col-md-12">
+				<table class="table tabled striped" id="t">
 					<tr>
 						<th>Username</th>
 						<th>Comment</th>
+					</tr>
+					<tr>
+						<td>lost404</td>
+						<td>Great writing, but I really don't agree with the concept of what you're trying to get across here.</td>
 					</tr>
 					<?php
 					foreach ($_COOKIE as $value)
