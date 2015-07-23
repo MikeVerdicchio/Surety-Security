@@ -63,6 +63,26 @@ header('X-XSS-Protection: 0');
 				<input type="button" value="Post" onclick="postComment()">
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table tabled striped">
+					<tr>
+						<th>Username</th>
+						<th>Comment</th>
+					</tr>
+					<?php
+					foreach ($_COOKIE as $value)
+					{
+						$value = explode(",", $value);
+						if(isset($value[1])){
+							echo "<tr><td>" . $value[0] . "</td>";
+							echo "<td>" . $value[1] . "</td></tr>";
+						}
+					}
+					?>
+				</table>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

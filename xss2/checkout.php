@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 header('X-XSS-Protection: 0');
-$str = $_GET['id']." ".$_GET['name']." ".$_GET['qty']." ".$_GET['price'];
+$str = $_GET['id'].",".$_GET['name'].",".$_GET['qty'].",".$_GET['price'];
 setcookie(time(),$str)
 ?>
 <html lang="en">

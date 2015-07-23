@@ -3,7 +3,6 @@ function buy(){
 	var qty = $('#qty').val();
 	var name = $('#name').val();
 	var price = $('#price').val();
-	name = name.replace(/\s+/g, '');
 	window.location.replace("/xss2/checkout?id="+id+"&qty="+qty+"&name="+name+"&price="+price);
 }
 function returnHome(){

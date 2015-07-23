@@ -35,7 +35,7 @@ header('X-XSS-Protection: 0');
 					<?php
 					foreach ($_COOKIE as $value)
 					{
-						$value = explode(" ", $value);
+						$value = explode(",", $value);
 						if(isset($value[3])){
 							echo "<tr><td>" . $value[0] . "</td>";
 							echo "<td>" . $value[1] . "</td>";
