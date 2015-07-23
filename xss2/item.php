@@ -6,7 +6,7 @@ header('X-XSS-Protection: 0');
 <head>
 	<title>Level 1 Tasks</title>
 	<?php include '../js/dependencies.php';?>
-	<script src="../js/xsslevel1.js"></script>
+	<script src="../js/xsslevel2.js"></script>
 </head>
 <body>
 	<br>
@@ -28,9 +28,42 @@ header('X-XSS-Protection: 0');
 			</div>
 		</div>
 		<div class="row">
+			<br>
 			<?php
 			echo '<div class="col-md-4" style="text-align:center;">';
 			echo '	<img src="/img/'.$_GET['id'].'.jpg">';
+			echo '</div>';
+			$price = 0;
+			$title = "";
+			if($_GET['id'] == 1){
+				$title = "Game Of Thrones";
+				$price = 9.99;
+			}
+			elseif ($_GET['id'] == 2) {
+				$title = "Fellowship Of The Ring";
+				$price = 8.62;
+			}
+			elseif ($_GET['id'] == 3) {
+				$title = "Twenty Thousand Leagues Under The Sea";
+				$price = 24000.00;
+			}
+			echo '<div class="col-md-4" style="text-align:center;">';
+			echo '</div>';
+			echo '<div class="col-md-4" style="text-align:center;">';
+			echo '	Buy '.$title.' for $'.$price.'<br>
+					Quantity
+					<select id="qty">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>&nbsp;&nbsp;';
+			echo '<input type="hidden" id="id" value="'.$_GET['id'].'">
+			<button type="button" onclick="buy();">Buy</button><br>
+			Item #'. $_GET['id'] .'
+			<input type="hidden" id="name" value="'.$title.'">
+			<input type="hidden" id="price" value="'.$price.'">';
 			echo '</div>';
 			?>
 		</div>

@@ -6,7 +6,7 @@ header('X-XSS-Protection: 0');
 <head>
 	<title>Level 2 Tasks</title>
 	<?php include '../js/dependencies.php';?>
-	<script src="../js/xsslevel1.js"></script>
+	<script src="../js/xsslevel2.js"></script>
 </head>
 <body>
 	<br>
