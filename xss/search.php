@@ -4,7 +4,6 @@ header('X-XSS-Protection: 0');
 ?>
 <html lang="en">
 <head>
-	<title>Level 1 Tasks</title>
 	<?php include '../js/dependencies.php';?>
 	<link rel="stylesheet" type="text/css" href="../css/stylesxss.css">
 	<script src="../js/xsslevel1.js"></script>

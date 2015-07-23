@@ -31,9 +31,11 @@
                         <li><a href="/xssoverview">Overview</a>
                         </li>
                         <li><a href="/xssprevention">Prevention</a>
-                        </li><!--
-                        <li><a href="/xsslevel1">Level 1 Tasks</a>
-                        </li>-->
+                        </li>
+                        <li><a href="/newscache">News Example</a>
+                        </li>
+                        <li><a href="/shoppingworld">Shopping Example</a>
+                        </li>
                     </ul>
                 </li>
                 <!--

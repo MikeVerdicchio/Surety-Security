@@ -4,7 +4,6 @@ header('X-XSS-Protection: 0');
 ?>
 <html lang="en">
 <head>
-	<title>Sample Story</title>
 	<?php include '../js/dependencies.php';?>
 	<link rel="stylesheet" type="text/css" href="../css/stylesxss.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>

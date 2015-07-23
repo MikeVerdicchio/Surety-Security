@@ -4,7 +4,6 @@ header('X-XSS-Protection: 0');
 ?>
 <html lang="en">
 <head>
-	<title>Level 1 Tasks</title>
 	<?php include '../js/dependencies.php';?>
 	<link rel="stylesheet" type="text/css" href="../css/stylesxss.css">
 	<script src="../js/xsslevel1.js"></script>
@@ -53,7 +52,7 @@ header('X-XSS-Protection: 0');
 			<div class="col-md-4">
 				<h2>Headlines</h2>
 				<ul>
-					<li>Is too much salt really detremental to a healthy lifestyle?<a href="/xss/story1"> Comment</a></li>
+					<li>Is too much salt really detremental to a healthy lifestyle? <a href="/xss/story1">Comment</a></li>
 					<li>Panda bear spotted in California forest</li>
 					<li>Washington Nationals make it to the World Series</li>
 					<li>One way websites are being hacked that you won't believe!</li>
