@@ -25,10 +25,9 @@
 				</ul>
 			</div>
 		</div>
-		<div class="row embed-responsive embed-responsive-16by9">
-			<iframe class="embed-responsive-item col-md-12" src="/xss/home.php" style="border: 3px solid black;"></iframe>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="/xss/home.php" style="border: 3px solid black;"></iframe>
 		</div>
-		<span id="demo"></span>
 
 		<!-- Footer -->
 		<?php include 'footer.php';?>

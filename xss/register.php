@@ -6,16 +6,17 @@ header('X-XSS-Protection: 0');
 <head>
 	<title>Level 1 Tasks</title>
 	<?php include '../js/dependencies.php';?>
+	<link rel="stylesheet" type="text/css" href="../css/stylesxss.css">
 	<script src="../js/xsslevel1.js"></script>
 </head>
 <body>
 	<br>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-10">
+			<div class="col-xs-11">
 				<input type="text" class="form-control" id="url" value="http://newscache.com/register">
 			</div>
-			<div class="col-md-2">
+			<div class="col-xs-1">
 				<input type="button" value="Go" onclick="urlInterpret();">
 			</div>
 		</div>
