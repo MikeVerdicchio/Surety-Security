@@ -13,14 +13,12 @@
 			</div>
 			<div class="col-md-4 col-md-offset-2">
 				<h2>Instructions</h2>
-				The objective for this learning module is to complete the tasks on the left on the website below. The website below is embedded in an iframe, so please do not refresh the page or else all progress will be lost! Navigation can be done using the back and forward to return to previous pages.
+				The objective for this learning module is to complete the tasks on the left on the website below. The website below is embedded in an iframe, so please do not refresh the page or else some progress will be lost! Navigation can be done using back and forward to return to previous pages.
 			</div>
 			<div class="col-md-4">
 				<h2>Task List</h2>
 				<ul>
-					<li><span id='1'>Find a way to get the script, src='/js/xsssuccess.js', to execute through the search function</span></li>
-					<li><span id='2'>Register</span></li>
-					<li><span id='3'>Comment</span></li>
+					<li><span id='1'>Figure a way how to purchase 999 of the $24,000 dollar book by using the script src="../js/buyalotofbooks.js"</span></li>
 				</ul>
 			</div>
 		</div>
