@@ -43,9 +43,9 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Secure Connections<span class="caret"></span></a>
                     ss
                     <ul class="dropdown-menu">
-                        <li><a href="/ssltls">SSL/TLS</a>
+                        <li><a href="/ssl">SSL</a>
                         </li>
-                        <li><a href="/handshake">TLS Handhsake</a>
+                        <li><a href="/handshake">SSL Handhsake</a>
                             </li>
                         <li><a href="/maninmiddle">Man in Middle</a>
                         </li>
