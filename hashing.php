@@ -46,6 +46,7 @@
 					<option value='sha256'>SHA-256</option>
 				</select>
 				<input type='submit' class='btn btn-default' onclick="hash()">
+				<br>
 				<span id='result'></span>
 			</div>
 			<div class="row">
@@ -57,7 +58,7 @@
 				Powered by <a href="http://www.md5crack.com/">http://www.md5crack.com/</a> API
 			</div>
 			<div class="row">
-				<h2>Problem 1</h2>
+				<h2>Problem</h2>
 				You find a piece of paper on the ground with a hash written on it b2568979648e8c2364eac353b9fee7b358741ddc82dd262b9dbc4176b03e7fff
 				What value does this hash go to?
 				<input type='text' id="prob1str">
