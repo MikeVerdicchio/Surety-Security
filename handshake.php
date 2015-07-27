@@ -21,7 +21,7 @@
 				<h3>ClientHello Message</h3>
 				Contains version of SSL the browser is using, siphersuites supported, random number, and other options
 				<h3>ServerHello Message</h3>
-				Contains what SSL version and siphersuite will be used, random number, and other toptions
+				Contains what SSL version and siphersuite will be used, random number, and other options
 				<h3>Certificate</h3>
 				Contains the public key and a potential request for the client certificate
 				<h3>ServerHelloDone</h3>
