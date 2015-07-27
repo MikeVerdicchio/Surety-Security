@@ -38,10 +38,9 @@
                         </li>
                     </ul>
                 </li>
-                <!--
+
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Secure Connections<span class="caret"></span></a>
-                    ss
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SSL<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="/ssl">SSL</a>
                         </li>
@@ -51,15 +50,6 @@
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SQL Injection<span class="caret"></span></a>
-                    ss
-                    <ul class="dropdown-menu">
-                        <li><a href="/sql">Overview</a>
-                        </li>
-                    </ul>
-                </li>
-                -->
                 <!--
 				<li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Videos <span class="caret"></span></a>

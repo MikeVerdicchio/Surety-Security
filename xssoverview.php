@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+header('X-XSS-Protection: 0');
+?>
 <html>
 <head>
 	<title>Cross Site Scripting</title>

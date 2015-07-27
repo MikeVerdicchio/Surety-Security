@@ -24,7 +24,7 @@ header('X-XSS-Protection: 0');
 				<h1>Welcome to Shopping World!</h1>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" style="text-align:center;">
 			<div class="col-md-6 col-md-offset-3">
 			<nav class="navbar navbar-inverse navbar-default">
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -42,6 +42,7 @@ header('X-XSS-Protection: 0');
 				</div>
 			</nav>
 		</div>
+		<img src="/img/shopping.png">
 		</div>
 	</div>
 </body>
