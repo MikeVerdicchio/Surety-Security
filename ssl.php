@@ -27,43 +27,42 @@
 				<h3>What does SSL Provide the user?</h3>
 				<ul>
 					<li>Encryption</li>
-						<ul>
-							<li>The user's communication between them and the server is protected
-								so only the user and the server can interpret the communication</li>
+					<ul>
+						<li>The user's communication between them and the server is protected
+							so only the user and the server can interpret the communication</li>
 							<li>Prevents outsiders from being able to interpret a grabbed packet from eavesdropping</li>
 							<li>This is especially important when logging into websites using passwords financial transactions, and even viewing email</li>
 						</ul>
-					<li>Verifiability</li>
+						<li>Verifiability</li>
 						<ul>
 							<li>The user is actually communicating with the server they want to be communicating with;
 								the server verifies that they are who they claim to be, this is done using certificates</li>
+							</ul>
+							<li>Integrity</li>
+							<ul>
+								<li>There won't be any changes to the packet's information by an outside force once it is sent</li>
+							</ul>
 						</ul>
-					<li>Integrity</li>
-						<ul>
-							<li>There won't be any changes to the packet's information by an outside force once it is sent</li>
-						</ul>
-				</ul>
-				<h2>Encryption</h2>
-				SSL uses asymmetric, or public key, encryption in the initial handshake. After the handshake,
-				a symmetric key is used for further communication
-				<h2>Verification</h2>
-				A website is able to verify they are who they say they are by use of a certificate. A website typically goes
-				through a third party, a Certificate Authority, in order to obtain a certificate for their site.
-				The Certificate Authority checks if the site is legitimate by looking at the information on their web server,
-				company, and location. The CA then creates a certificate for the website and signs it. The site then puts the certificate on their servers.
-				The browser generally has root CAs that are trusted by the developer of the browser, but the user can also manually
-				add/remove certificates if they want more control over their security. The browser verifies the signature of the website's certificate when connecting to their site.
-				<h2>Integrity</h2>
-				A Message Authentication Code provides a way to ensure the message is intact when arrived. The MAC is computed and sent
-				with the message by the sender, the receiver then computes the MAC for the message, if the two MAC values differ then the message isn't intact.
-				<h2>Computation Cost</h2>
-				With modern hardware and software improvements, SSL doesn't take up much of the CPU load or network overhead anymore.
-				Companies that switched over to SSL didn't have to purchase any additional hardware.
+						<h2>Encryption</h2>
+						SSL uses asymmetric, or public key, encryption in the initial handshake. After the handshake,
+						a symmetric key is used for further communication
+						<h2>Verification</h2>
+						A website is able to verify they are who they say they are by use of a certificate. A website typically goes
+						through a third party, a Certificate Authority, in order to obtain a certificate for their site.
+						The Certificate Authority checks if the site is legitimate by looking at the information on their web server,
+						company, and location. The CA then creates a certificate for the website and signs it. The site then puts the certificate on their servers.
+						The browser generally has root CAs that are trusted by the developer of the browser, but the user can also manually
+						add/remove certificates if they want more control over their security. The browser verifies the signature of the website's certificate when connecting to their site.
+						<h2>Integrity</h2>
+						A Message Authentication Code provides a way to ensure the message is intact when arrived. The MAC is computed and sent
+						with the message by the sender, the receiver then computes the MAC for the message, if the two MAC values differ then the message isn't intact.
+						<h2>Computation Cost</h2>
+						With modern hardware and software improvements, SSL doesn't take up much of the CPU load or network overhead anymore.
+						Companies that switched over to SSL didn't have to purchase any additional hardware.
+					</div>
+				</div>
+				<!-- Footer -->
+				<?php include 'footer.php';?>
 			</div>
-		</div>
-
-		<!-- Footer -->
-		<?php include 'footer.php';?>
-	</div>
-</body>
-</html>
+		</body>
+		</html>
