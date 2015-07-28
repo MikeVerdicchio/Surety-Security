@@ -1,23 +1,30 @@
-body { font-family: 'Roboto Slab', serif; 
-	font-size: 16px;
-	line-height: 145%;
-	background-color: #F5F5F0;
-	color: #2C3539;
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    line-height: 145%;
+    background-color: #F5F5F0;
+    color: #2C3539;
 }
 
-h1{
-	font-size: 450%;
+h1 {
+    font-size: 450%;
 }
 
-h2{
-	font-size: 200%;
-	border-bottom: 2px solid #D6D6C2;
+h2 {
+    font-size: 200%;
+    border-bottom: 2px solid #D6D6C2;
 }
 
 p.small {
     line-height: 10px;
 }
 
-pre{
-	background-color: #FFFFFF;
+pre {
+    background-color: #FFFFFF;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
 }

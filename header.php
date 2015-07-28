@@ -22,6 +22,8 @@
                         </li>
                         <li><a href="/hashing">Password Hashing</a>
                         </li>
+                        <li><a href="/passwordsgraphic">Passwords Graphic</a>
+                        </li>
                     </ul>
                 </li>
 
