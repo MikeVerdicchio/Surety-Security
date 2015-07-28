@@ -46,7 +46,7 @@
                         </li>
                         <li><a href="/handshake">SSL Handhsake</a>
                         </li>
-                        <li><a href="/maninmiddle">Man in Middle</a>
+                        <li><a href="/maninmiddle">Man in the Middle</a>
                         </li>
                     </ul>
                 </li>

@@ -18,9 +18,9 @@
 			<div class="col-md-4">
 				<h2>Tasks</h2>
 				<ul>
-					<li><span id='1'>Get the script, src='/js/xsssuccess.js', to execute by the search function</span></li>
-					<li><span id='2'>Execute a stored attack by posting a comment in the salt story</span></li>
-					<li><span id='3'>Make a XSS attack by registering for the daily newsletter</span></li>
+					<li><span id='2'>Inject a script that redirects to a gif or video in a comment on mouseover on the salt story</span></li>
+					<li><span id='3'>Find a way to make a reflected attack through registering for the newsletter</span></li>
+					<li><span id='1'>Get the script, src='/js/xsssuccess.js', to execute by using the search function</span></li>
 				</ul>
 			</div>
 		</div>
