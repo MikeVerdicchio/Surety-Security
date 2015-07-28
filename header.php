@@ -72,3 +72,13 @@
     </div>
 </nav>
 <br>
+<script>
+    $(document).ready(function () {
+        var mobileBool = false;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            mobileBool = true;
+            alert("It looks like you're on a mobile device.\n\nThis site hasn't been optimized to work on smaller screens yet, so proceed with caution. Check Surety Security out on a bigger screen for maximum information.");
+        }
+    });
+</script>
+<br>
