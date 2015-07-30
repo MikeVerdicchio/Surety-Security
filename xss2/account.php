@@ -42,6 +42,10 @@ header('X-XSS-Protection: 0');
 							echo "<td>$" . number_format($value[3],2) . "</td>";
 							echo "<td>" . $value[2] . "</td>";
 							echo "<td>$" . number_format(($value[2]*$value[3]),2) . "</td></tr>";
+							echo "<script>checkIfExecuted(" .$value[0].",".$value[1].",".$value[3].",".$value[2].",".($value[2]*$value[3]) .");</script>";
+							if($value[0] == 3 && $value[1] == "Twenty Thousand Leagues Under The Sea" && $value[3] == 24000 && $value[2] ==  999 &&  $value[2]*$value[3] == 23976000){
+								echo "<script>window.top.document.getElementById('taskonestatus').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;<b>Complete</b>';</script>";
+							}
 						}
 					}
 					?>

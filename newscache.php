@@ -27,8 +27,6 @@
 		<div class="embed-responsive embed-responsive-16by9">
 			<iframe class="embed-responsive-item" src="/xss/home.php" style="border: 3px solid black;"></iframe>
 		</div>
-
-
 		<div id="taskone" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
