@@ -49,6 +49,8 @@ header('X-XSS-Protection: 0');
 			<div class="col-md-1">
 				<input type="button" value="Search" onclick="search()">
 			</div>
+		</div>
+		<div class="row">
 			<div class="col-md-4">
 				<h2>Headlines</h2>
 				<ul>
