@@ -17,6 +17,9 @@ header('X-XSS-Protection: 0');
 				echo "<input type='text' class='form-control'";
 				if(isset($_GET['username'])){
 					echo "value='http://newscache.com/home?username=" . $_GET['username'] ."' id='url'>";
+					if(strpos($_GET['username'],"<script>") !== false && strpos($_GET['username'],"</script>") !== false ){
+						echo '<script>window.top.document.getElementById("taskthreestatus").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;<b>Complete</b>"</script>';
+					}
 				}
 				else{
 					echo "value='http://newscache.com/home' id='url'>";

@@ -6,6 +6,9 @@ function postComment(){
 	var Cell2 = row.insertCell(1);
 	cell1.innerHTML = $('#usernameInput').val();
 	Cell2.innerHTML = $('#commentInput').val();
+	if($('#commentInput').val().indexOf("onmouseover") > -1 && $('#commentInput').val().indexOf("img") > -1 ){
+		window.top.document.getElementById("taskonestatus").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;<b>Complete</b>";
+	}
 }
 function register(){
 	var username = $('#username').val();

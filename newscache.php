@@ -36,8 +36,8 @@
 					</div>
 					<div class="modal-body">
 						A stored attack is a script that is persistant on the website's servers. Your goal is to try to make an attack through the comments section
-						on one of the stories on the website. When you go back to the page the comment will still be there.
-						(Data will only stay through browsing session as storage is only done through cookies)
+						on one of the stories on the website through embedded an onmouseover event on an image in a comment. When you go back to the page the comment will still be there.
+						(Note: Data will only stay through browsing session as storage is only done through cookies)
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -71,7 +71,8 @@
 					</div>
 					<div class="modal-body">
 						This attack can be done two ways, one by injecting the script while registering the newsletter, or by changing a url paramter
-						on the hompage after you register for the newsletter. (Note: No email is actually stored while registering for the newsletter)
+						on the hompage after you register for the newsletter. (Note: No email is actually stored while registering for the newsletter and
+						you must include script tags in your attack to register completing the task)
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
