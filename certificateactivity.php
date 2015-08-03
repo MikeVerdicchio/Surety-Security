@@ -4,6 +4,7 @@
 	<title>Scavenger Hunt</title>
 	<!-- Dependencies -->
 	<?php include 'header.php';?>
+		<script src="js/certLookup.js"></script>
 </head>
 <body>
 	<br>
@@ -11,9 +12,9 @@
 		<div class="row" style="text-align:center;">
 			<div class="col-md-8 col-md-offset-2">
 				<h1></h1>
-				<?php
-					echo exec('openssl s_client -connect google.com:443')
-				?>
+				<input type='text' id="site">
+				<input type='submit' class='btn btn-default' onclick="certLookup()">
+				<span id="certInfo"></span>
 			</div>
 		</div>
 	</div>
