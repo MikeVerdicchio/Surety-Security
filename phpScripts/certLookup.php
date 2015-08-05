@@ -7,13 +7,17 @@ $currentCert = "";
 foreach($output as $line){
 	if(strpos($line,'CN=') !== false){
 		$cert = explode('CN=', $line);
-		if($cert[1] != $currentCert){
-		array_push($certChain, $cert[1]);
-		$currentCert = $cert[1];
+		$cert = explode('/',$cert[1]);
+		if($cert[0] != $currentCert){
+		array_push($certChain, $cert[0]);
+		$currentCert = $cert[0];
 	}
 	}
 	if(strpos($line,'END CERTIFICATE') !== false){
-		print_r($certChain);
+		$certChain = array_reverse($certChain);
+		foreach($cert as $certChain){
+			echo $cert . "<br>";
+		}
 	}
 	if(strpos($line,'Cipher') !== false){
 		$cipher = explode(":", $line);
