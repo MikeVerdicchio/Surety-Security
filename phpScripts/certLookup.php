@@ -4,6 +4,7 @@ exec('openssl s_client -connect '. $site.':443 < /dev/null',$output);
 echo "<br>";
 $certChain = array();
 $currentCert = "";
+echo "<h2>Certificate Information for ". $site."</h2>";
 foreach($output as $line){
 	if(strpos($line,'CN=') !== false){
 		$cert = explode('CN=', $line);
@@ -22,7 +23,7 @@ foreach($output as $line){
 			$start = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $start;
 		}
 	}
-	if(strpos($line,'Cipher') !== false){
+	if(strpos($line,'Cipher    :') !== false){
 		$cipher = explode(":", $line);
 		$cipher = str_replace("-",", ",$cipher[1]);
 		echo "<b>Ciphers supported:</b> ". $cipher . "<br>";

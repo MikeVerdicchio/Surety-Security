@@ -10,7 +10,8 @@
 	<br>
 	<div class="container-fluid">
 		<div class="row" style="text-align:center;">
-			<input type='text' id="site">
+			<h1>Certificate Lookup</h1> <br>
+			Enter a website: <input type='text' id="site">
 			<input type='submit' class='btn btn-default' onclick="certLookup()">
 		</div>
 		<div class="row">
