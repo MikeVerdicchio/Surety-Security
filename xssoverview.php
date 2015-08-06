@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-header('X-XSS-Protection: 0');
+//header('X-XSS-Protection: 0');
 ?>
 <html>
 <head>
