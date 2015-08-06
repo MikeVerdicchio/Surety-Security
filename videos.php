@@ -36,6 +36,19 @@
                 <p>Two Factor Authentication takes your Internet security to a whole new level by requiring two "keys" to get into your accounts. One key is something you <b>know</b> like your typical username/password combination. The second key is something you <b>have</b> such as a fingerprint or a randomly-generated code from an app on your smartphone.</p>
             </div>
         </div>
+
+        <hr>
+        <!-- Video 3: Hashing and Password Storage -->
+        <div class="row">
+            <div class="col-md-7">
+                <iframe width="600" height="300" src="https://www.youtube.com/embed/z8tUW8Z96dI?hd1080" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-5">
+                <h3>Hashing and Password Storage</h3>
+                <p>An important part of web development is safely storing users' credentials. The key is to use a one-way function, like hashing. Hashing is a cryptographic technique that takes a plaintext password and creates a random, fixed-length string of characters. This string, called a hash, is stored by the website instead of a plaintext or encrypted password.</p>
+            </div>
+        </div>
+
         <?php include 'footer.php';?>
     </div>
 
