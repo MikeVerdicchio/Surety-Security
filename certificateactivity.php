@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Scavenger Hunt</title>
+	<title>Certificate Lookup</title>
 	<!-- Dependencies -->
 	<?php include 'header.php';?>
 		<script src="js/certLookup.js"></script>
