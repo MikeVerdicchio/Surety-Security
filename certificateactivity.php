@@ -10,10 +10,12 @@
 	<br>
 	<div class="container-fluid">
 		<div class="row" style="text-align:center;">
+			<input type='text' id="site">
+			<input type='submit' class='btn btn-default' onclick="certLookup()">
+		</div>
+		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h1></h1>
-				<input type='text' id="site">
-				<input type='submit' class='btn btn-default' onclick="certLookup()">
 				<span id="certInfo"></span>
 			</div>
 		</div>
