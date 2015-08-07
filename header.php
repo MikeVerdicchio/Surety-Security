@@ -44,11 +44,11 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SSL<span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                        <li><a href="/ssl">SSL Overview</a>
+                        </li>
                         <li><a href="/certificateactivity">Certificate Activity</a>
                         </li>
                         <!--
-                        <li><a href="/ssl">SSL</a>
-                        </li>
                         <li><a href="/handshake">SSL Handhsake</a>
                         </li>
                         <li><a href="/maninmiddle">Man in the Middle</a>
