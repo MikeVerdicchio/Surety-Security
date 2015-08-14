@@ -82,7 +82,7 @@
             </div>
             <div class="col-md-5">
                 <h3>What is Cross-Site Scripting?</h3>
-                <p>An important part of web development is safely storing users' credentials. The key is to use a one-way function, like hashing. Hashing is a cryptographic technique that takes a plaintext password and creates a random, fixed-length string of characters. This string, called a hash, is stored by the website instead of a plaintext or encrypted password.</p>
+                <p>Cross Site Scripting (XSS) is a kind of injection attack in which an attacker exploits vulnerabilities in a website in order to inject malicious code that will attack visitors to the site. The injected code executes in the visitor’s web browser, and appears to come from the trusted website.</p>
             </div>
         </div>
 
@@ -97,7 +97,7 @@
             </div>
             <div class="col-md-5">
                 <h3>Preventing Cross-Site Scripting Attacks</h3>
-                <p></p>
+                <p>In general, the most important thing about preventing injection attacks is to adopt the mindset that nothing a user can control should be trusted. The two main ways to prevent XSS attacks are input validation and input transformation.</p>
             </div>
         </div>
 -->
