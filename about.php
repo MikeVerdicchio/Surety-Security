@@ -10,10 +10,8 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">About Us
-                    <small>Web Security Team</small>
-                </h1>
-                <p>We're undergraduate students at the University of Virginia in Charlottesville, VA. Working with Professor David Evans, we are looking to create educational material dedicated to teaching computer security fundamentals to the general public and developers.</p>
+                <h1 class="page-header">Web Security Team</h1>
+                <p>We're undergraduate students at the University of Virginia in Charlottesville, VA. Working with Professor David Evans, we are looking to create educational material dedicated to teaching computer security fundamentals. These materials are targeted towards the <a href="https://picoctf.com/">Carnegie Mellon picoCTF</a> program, but are also made for the general public and developers.</p>
             </div>
         </div>
 

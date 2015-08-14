@@ -14,10 +14,12 @@
             </div>
         </div>
 
-        <!-- Video 1: What Makes a Strong Password? -->
+        <!-- What Makes a Strong Password? -->
         <div class="row">
             <div class="col-md-7">
-                <iframe width="600" height="300" src="https://www.youtube.com/embed/Wv0EgRVKaXw?hd1080" frameborder="0" allowfullscreen></iframe>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wv0EgRVKaXw?hd1080"></iframe>
+                </div>
             </div>
             <div class="col-md-5">
                 <h3>What Makes a Strong Password?</h3>
@@ -26,10 +28,29 @@
         </div>
 
         <hr>
-        <!-- Video 2: What is Two-Factor Authentication? -->
+        <!-- Password Storage -->
+<!--
         <div class="row">
             <div class="col-md-7">
-                <iframe width="600" height="300" src="https://www.youtube.com/embed/Da4lp54v6ng?hd1080" frameborder="0" allowfullscreen></iframe>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/z8tUW8Z96dI?hd1080"></iframe>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>How to Generate and Write Down Passwords</h3>
+                <p></p>
+            </div>
+        </div>
+-->
+
+
+        <hr>
+        <!-- What is Two-Factor Authentication? -->
+        <div class="row">
+            <div class="col-md-7">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Da4lp54v6ng?hd1080"></iframe>
+                </div>
             </div>
             <div class="col-md-5">
                 <h3>What is Two-Factor Authentication?</h3>
@@ -38,16 +59,48 @@
         </div>
 
         <hr>
-        <!-- Video 3: Hashing and Password Storage -->
+        <!-- Hashing and Password Storage -->
         <div class="row">
             <div class="col-md-7">
-                <iframe width="600" height="300" src="https://www.youtube.com/embed/z8tUW8Z96dI?hd1080" frameborder="0" allowfullscreen></iframe>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/z8tUW8Z96dI?hd1080"></iframe>
+                </div>
             </div>
             <div class="col-md-5">
                 <h3>Hashing and Password Storage</h3>
                 <p>An important part of web development is safely storing users' credentials. The key is to use a one-way function, like hashing. Hashing is a cryptographic technique that takes a plaintext password and creates a random, fixed-length string of characters. This string, called a hash, is stored by the website instead of a plaintext or encrypted password.</p>
             </div>
         </div>
+
+        <hr>
+        <!-- What is Cross-Site Scripting? -->
+        <div class="row">
+            <div class="col-md-7">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ddcQ688eO7U?hd1080"></iframe>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>What is Cross-Site Scripting?</h3>
+                <p>An important part of web development is safely storing users' credentials. The key is to use a one-way function, like hashing. Hashing is a cryptographic technique that takes a plaintext password and creates a random, fixed-length string of characters. This string, called a hash, is stored by the website instead of a plaintext or encrypted password.</p>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Preventing Cross-Site Scripting Attacks -->
+<!--
+        <div class="row">
+            <div class="col-md-7">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/z8tUW8Z96dI?hd1080"></iframe>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>Preventing Cross-Site Scripting Attacks</h3>
+                <p></p>
+            </div>
+        </div>
+-->
 
         <?php include 'footer.php';?>
     </div>
