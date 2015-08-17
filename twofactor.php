@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Two-Factor Authentication</title>
     <?php include 'header.php';?>
-    <script src="js/twofactorJS.js"></script>
+        <script src="js/twofactorJS.js"></script>
 </head>
+
 <body>
     <br>
     <div class="container-fluid">
@@ -15,8 +17,7 @@
         </div>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h2>Two Factor Authentication</h2>
-                Having a strong password is one way to avoid having one's account being compromised on the internet. Two factor authentication is another way to greatly increase the security on an account. It contains two of three things
+                <h2>Two Factor Authentication</h2> Having a strong password is one way to avoid having one's account being compromised on the internet. Two factor authentication is another way to greatly increase the security on an account. It contains two of three things
                 <ul>
                     <li>Something you are (fingerprint)</li>
                     <li>Something you have (generated key from an app or a security card)</li>
@@ -27,6 +28,11 @@
                 <br>There are some disadvantages to two factor authentication. If the device is ever lost, then the user cannot access their account and has to go through a process in order to reset the account, though as precaution against this some services offer backup codes that can be printed and stored in a wallet. The device also has to be around at all times with the user.
                 <br>
                 <br>A couple great Two Factor Authentication apps are <a href="https://www.google.com/landing/2step/">Google Authenticator</a> and <a href="https://www.authy.com/users">Authy</a>.
+                <br>
+                <br>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Da4lp54v6ng?hd1080"></iframe>
+                </div>
             </div>
         </div>
 
