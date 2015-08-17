@@ -28,6 +28,9 @@ if($output){
 				echo $start .$cert . "<br>";
 				$start = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $start;
 			}
+			if(count($certChain) >= 4){
+				echo "<script>document.getElementById('taskonestatus').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;<b>Complete</b>';";
+			}
 			echo "<br>";
 		}
 		if(strpos($line,'Cipher    :') !== false){
