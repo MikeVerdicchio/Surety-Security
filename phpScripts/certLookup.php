@@ -28,8 +28,8 @@ if($output){
 				echo $start .$cert . "<br>";
 				$start = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $start;
 			}
-			if(count($certChain) >= 4){
-				echo "<script>document.getElementById('taskonestatus').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;<b>Complete</b>';";
+			if(sizeof($certChain) >= 4){
+				echo "<script>document.getElementById('taskonestatus').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;<b>Complete</b>';</script>";
 			}
 			echo "<br>";
 		}
