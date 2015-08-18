@@ -4,6 +4,7 @@ $output = "";
 exec('openssl s_client -connect '. $site.':443 < /dev/null',$output);
 echo "<br>";
 $certChain = array();
+echo '<script src="../js/certLookup.js"></script>';
 $currentCert = "";
 if(!$output){
 	//try with www.
@@ -22,14 +23,12 @@ if($output){
 		}
 		if(strpos($line,'END CERTIFICATE') !== false){
 			$certChain = array_reverse($certChain);
-			echo "<b>Certificate Hierarchy</b><br>";
+			$num = count($certChain);
+			echo "<b>Certificate Hierarchy</b> Length of <span id='num'>" . $num . "</span><br>";
 			$start = "-";
 			foreach($certChain as $cert){
 				echo $start .$cert . "<br>";
 				$start = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $start;
-			}
-			if(sizeof($certChain) >= 4){
-				echo "<script>document.getElementById('taskonestatus').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;<b>Complete</b>';</script>";
 			}
 			echo "<br>";
 		}
