@@ -16,6 +16,7 @@
 				<ul>
 					<li><div data-toggle="modal" data-target="#taskone" style="display: inline-block;"><a href="#">Task One - Find a certificate chain that is four or longer</a></div><span id="taskonestatus">&nbsp;&nbsp;&nbsp;&nbsp; Incomplete</span></li>
 					<li><div data-toggle="modal" data-target="#tasktwo" style="display: inline-block;"><a href="#">Task Two - Find a website using SSL 3.0 or lower</a></div><span id="tasktwostatus">&nbsp;&nbsp;&nbsp;&nbsp; Incomplete</span></li>
+					<li><div data-toggle="modal" data-target="#taskthree" style="display: inline-block;"><a href="#">Task Three - Find a website using SHA384</a></div><span id="taskthreestatus">&nbsp;&nbsp;&nbsp;&nbsp; Incomplete</span></li>
 				</ul>
 				<div style="text-align:center;">
 					Enter a website: <input type='text' id="site">
@@ -47,7 +48,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="taskone" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div id="tasktwo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -55,8 +56,24 @@
 					<h4 class="modal-title" id="myModalLabel">Using SSL 3.0 or lower</h4>
 				</div>
 				<div class="modal-body">
-					Try and find a website that is currently using SSL 3.0 or lower, most websites have made the switch to TLS, but a
+					Try and find a website that is currently using SSL 3.0 or lower. Most websites have made the switch to TLS, but a
 					few websites have not. 
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="taskthree" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;  </button>
+					<h4 class="modal-title" id="myModalLabel">Using SHA384</h4>
+				</div>
+				<div class="modal-body">
+					Try and find a website that is currently using SHA384 as one of their ciphers. 
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

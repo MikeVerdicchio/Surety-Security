@@ -35,7 +35,7 @@ if($output){
 		if(strpos($line,'Cipher    :') !== false){
 			$cipher = explode(":", $line);
 			$cipher = str_replace("-",", ",$cipher[1]);
-			echo "<b>Ciphers supported:</b> ". $cipher . "<br>";
+			echo "<b>Ciphers supported:</b> <span id='ciphers'>". $cipher . "</span><br>";
 			echo "<br>";
 		}
 		if(strpos($line,'Protocol') !== false){
