@@ -13,7 +13,7 @@ function certLookup() {
 				document.getElementById("tasktwostatus").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;<b>Complete</b>";
 			}
 			var ciphers = document.getElementById("ciphers").innerHTML;
-			if(version.indexOf("SHA384") > -1){
+			if(ciphers.indexOf("SHA384") > -1){
 				document.getElementById("taskthreestatus").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;<b>Complete</b>";
 			}
 		}
