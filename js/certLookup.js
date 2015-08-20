@@ -8,6 +8,10 @@ function certLookup() {
 			if(parseInt(num) >=4){
 				document.getElementById("taskonestatus").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;<b>Complete</b>";
 			}
+			var version = document.getElementById("version").innerHTML;
+			if(version.indexOf("TLS") > -1){
+				document.getElementById("tasktwostatus").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;<b>Complete</b>";
+			}
 		}
 	}
 	xmlhttp.open("GET", "phpScripts/certLookup.php?site=" + site);

@@ -40,7 +40,7 @@ if($output){
 		}
 		if(strpos($line,'Protocol') !== false){
 			$protocol = explode(":", $line);
-			echo  "<b>Version of SSL/TLS:</b> ". $protocol[1] . "<br>";
+			echo  "<b>Version of SSL/TLS:</b> <span id='version'>". $protocol[1] . "</span><br>";
 			echo "<br>";
 		}
 	}
