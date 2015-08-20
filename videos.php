@@ -88,11 +88,10 @@
 
         <hr>
         <!-- Preventing Cross-Site Scripting Attacks -->
-<!--
         <div class="row">
             <div class="col-md-7">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/z8tUW8Z96dI?hd1080"></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0Oz645g3Wh0?hd1080"></iframe>
                 </div>
             </div>
             <div class="col-md-5">
@@ -100,7 +99,6 @@
                 <p>In general, the most important thing about preventing injection attacks is to adopt the mindset that nothing a user can control should be trusted. The two main ways to prevent XSS attacks are input validation and input transformation.</p>
             </div>
         </div>
--->
 
         <?php include 'footer.php';?>
     </div>
