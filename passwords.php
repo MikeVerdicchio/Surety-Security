@@ -43,6 +43,11 @@
                 attacker can guess trillions of passwords, so will be able to break accounts that have passwords that might seem
                 strong enough to humans.
                 </p>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wv0EgRVKaXw?hd1080"></iframe>
+                </div>
+
                 <p>
                 In trying to compromise an account, an attacker will try to obtain a correct password by searching the space of likely passwords:
                 <br>
@@ -54,21 +59,36 @@
                 </ul>
                 Including symbols, numbers, uppercase, and lowercase characters increases the number of potential 
                 combinations by expanding the search space. 
+                </p><p>
                 A longer password is the best defense against a brute force attack, as each additional character raises the amount of brute force guesses potentially needed exponentially. 
-                A password containing padding that includes an uppercase and lowercase character, symbol, and digit like U7^d can make a password even stronger. A password containing 12 or more characters with a symbol, number, and upper/lowercase letter is highly recommended because at 350 billion password cracks per second, it would take 50,000 years to break in a best case scenario.
-                
-                Reusing passwords on sites is not recommended because even though one site might be safe, other sites might not be secure and store their passwords in plaintext or other insecure manner.
+                A password containing padding that includes an uppercase and lowercase characters, symbols, and digits can make a password even stronger. 
+                A password containing 12 or more characters with a mix of symbols, numbers, and upper and lowercase letters should be sufficient.  
+                A well-resources current attacker can attempt about 350 billion password guesses per second.  At this rate, we would expect it to take 
+                50,000 years for an attacker to guess a good 12-character password.
+                </p><p>
+                Reusing passwords on sites is not recommended because even though one site might be safe, 
+                other sites might not be secure and store their passwords in plaintext or other insecure manner.
+                Its best to use a weak password for sites where your account has no value (that is, you don't mind if it
+                gets broken), and use unique, strong passwords for the few sites you use that are most valuable.  Keep in 
+                mind that your email account can be used to reset other passwords for most sites, so this needs to be one of your 
+                stronges passwords!
+                </p>
                 <br><br>
 
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wv0EgRVKaXw?hd1080"></iframe>
-                </div>
 
-                <h2>Search Space Strength Calculator</h2> Enter in a password:
+                <h2>Search Space Strength Calculator</h2> 
+                
+                Enter in a password:
                 <input type="text" id="password">
                 <br>Your password is hidden within a space of <span id="strength"> </span>
-                <br>This is based on the search space calculator on <a href='https://www.grc.com/haystack.htm'>https://www.grc.com/haystack.htm</a>
-
+                <br>
+                This is based on the search space calculator on <a href='https://www.grc.com/haystack.htm'>https://www.grc.com/haystack.htm</a>
+                Note that this is making lots of (risky!) assumptions about how an attacker searches for your password.
+                    
+                    <b>
+                        TODO: write a bit about the assumptions it makes, and why an actual attacker may be able to find password faster
+                    </b>
+                    
                 <h2>External Resources</h2>
                 <a href="http://blog.codinghorror.com/your-password-is-too-damn-short/">Coding Horror Post About Password Length</a>
                 <br>
