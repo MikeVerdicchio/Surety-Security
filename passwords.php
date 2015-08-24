@@ -17,7 +17,34 @@
         </div>
         <div class="row">
             <div class="col-lg-7">
-                <h2>What is Considered a Strong Password?</h2> A password provides protection against outside forces accessing one's account. A user having a strong password is important because it helps prevent account compromisation. Just using one word or common patterns like 123456 or monkey1 does not provide any protection as these passwords can be easily guessed. In trying to compromise an account, a hacker will try to obtain a correct password by going through
+                <h2>What Makes a Strong Password?</h2> 
+                <p>
+                For most accounts, a password provides both the first and last protection against outsiders compromising and abusing the account. 
+                A password is strong <em>enough</em> if it thwarts an attackers' attempts to break into the account.  How strong it needs
+                to be to do this depends on the value of the account (how much is it worth to an attacker to break into it) and the 
+                expected capabilities and resources of the attackers.
+                </p>
+                <p></p>
+                Some attackers just want to break into as many accounts as they can for a particular site (for example, to obtain
+                accounts from a web-based email site to use for sending spam email), and don't have any way to try to compromise accounts
+                other than to guess logins.  They will guess a few simple passwords for each account, and only compromise the
+                accounts with the weakest passwords.  This is known as an "on-line" attack, since the attacker must try password
+                guessed by actually attempting to login to the site with them.  Passwords like "123456", "password", and "secret"
+                provide little protection as they will be amongst the first passwords guessed.
+                An on-line attacker has a limited number of guesses, however, since each guess
+                takes a lot of time to executed, and if the site has reasonable security protections, it will limit the number of
+                failed login attempts for each account and requesting IP address.
+                </p>
+                <p>
+                Other attackers are able to obtain the password database from the target site (usually because of other security 
+                vulnerabilities).  If the passwords are stored in a sensible way (see <a href="http://www.suretysecurity.org/hashing">Password Hashing</a>),
+                the attacker who obtains the hashed password database still has work to do to obtain actual password.  Such an attacker
+                can execute an "off-line" attack, trying passwords against the hashed passwords to find ones that work.  An off-line
+                attacker can guess trillions of passwords, so will be able to break accounts that have passwords that might seem
+                strong enough to humans.
+                </p>
+                <p>
+                In trying to compromise an account, an attacker will try to obtain a correct password by searching the space of likely passwords:
                 <br>
                 <ul>
                     <li>Words found in a dictionary (dragon)</li>
@@ -25,7 +52,12 @@
                     <li>Basic transformations (dr4g0n)</li>
                     <li>A brute force search (aaa, aab, aac, ...)</li>
                 </ul>
-                The inclusion of symbols, numbers, uppercase, and lowercase characters increases the number of potential combinations by expanding the search space. A longer password is the best defense against a brute force attack, as each additional character raises the amount of brute force guesses potentially needed exponentially. A password containing padding that includes an uppercase and lowercase character, symbol, and digit like U7^d can make a password even stronger. A password containing 12 or more characters with a symbol, number, and upper/lowercase letter is highly recommended because at 350 billion password cracks per second, it would take 50,000 years to break in a best case scenario. Reusing passwords on sites is not recommended because even though one site might be safe, other sites might not be secure and store their passwords in plaintext or other insecure manner.
+                Including symbols, numbers, uppercase, and lowercase characters increases the number of potential 
+                combinations by expanding the search space. 
+                A longer password is the best defense against a brute force attack, as each additional character raises the amount of brute force guesses potentially needed exponentially. 
+                A password containing padding that includes an uppercase and lowercase character, symbol, and digit like U7^d can make a password even stronger. A password containing 12 or more characters with a symbol, number, and upper/lowercase letter is highly recommended because at 350 billion password cracks per second, it would take 50,000 years to break in a best case scenario.
+                
+                Reusing passwords on sites is not recommended because even though one site might be safe, other sites might not be secure and store their passwords in plaintext or other insecure manner.
                 <br><br>
 
                 <div class="embed-responsive embed-responsive-16by9">
