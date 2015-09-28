@@ -4,7 +4,7 @@
 <head>
     <title>Two-Factor Authentication</title>
     <?php include 'header.php';?>
-        <script src="js/twofactorJS.js"></script>
+    <script src="js/twofactorJS.js"></script>
 </head>
 
 <body>
@@ -73,13 +73,13 @@
                 </div>
             </div>
         </div>
-        <!--
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h2>External Resources</h2>
-            </div>
-        </div>
-    -->
+
+        <nav>
+            <ul class="pager">
+                <li><a href="/hashing">Next: Password Hashing</a>
+                </li>
+            </ul>
+        </nav>
 
         <?php include 'footer.php';?>
     </div>

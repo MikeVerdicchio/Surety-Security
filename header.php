@@ -1,67 +1,33 @@
 <?php include 'js/dependencies.php';?>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Surety Security</a>
-            </div>
-            <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Passwords <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/passwords">Overview</a>
-                            </li>
-                            <li><a href="/twofactor">Two Factor Authentication</a>
-                            </li>
-                            <li><a href="/hashing">Password Hashing</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cross Site Scripting<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/xssoverview">Overview</a>
-                            </li>
-                            <li><a href="/xssprevention">Prevention</a>
-                            </li>
-                            <li><a href="/newscache">News Example</a>
-                            </li>
-                            <li><a href="/shoppingworld">Shopping Example</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SSL<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/ssl">SSL Overview</a>
-                            </li>
-                            <li><a href="/certificateactivity">Certificate Activity</a>
-                            </li>
-                            <!--
-                        <li><a href="/handshake">SSL Handhsake</a>
-                        </li>
-                        <li><a href="/maninmiddle">Man in the Middle</a>
-                        </li>
-                    -->
-                        </ul>
-                    </li>
-                    <li><a href="/videos">Videos</a>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/about">About Us</a></li>
-                </ul>
-            </div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Surety Security</a>
         </div>
-    </nav>
-    <br>
-    <br>
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/passwords">Passwords</a>
+                </li>
+                <li><a href="/xssoverview">Cross Site Scripting</a>
+                </li>
+                <li><a href="/ssl">Secure Sockets Layer</a>
+                </li>
+                <li><a href="/videos">Videos</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/about">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
