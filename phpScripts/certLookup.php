@@ -4,6 +4,7 @@ $output = "";
 exec('openssl s_client -connect '. $site.':443 < /dev/null',$output);
 echo "<br>";
 $certChain = array();
+echo '<script src="../js/certLookup.js"></script>';
 $currentCert = "";
 if(!$output){
 	//try with www.
@@ -22,7 +23,8 @@ if($output){
 		}
 		if(strpos($line,'END CERTIFICATE') !== false){
 			$certChain = array_reverse($certChain);
-			echo "<b>Certificate Hierarchy</b><br>";
+			$num = count($certChain);
+			echo "<b>Certificate Hierarchy</b> Length of <span id='num'>" . $num . "</span><br>";
 			$start = "-";
 			foreach($certChain as $cert){
 				echo $start .$cert . "<br>";
@@ -33,12 +35,12 @@ if($output){
 		if(strpos($line,'Cipher    :') !== false){
 			$cipher = explode(":", $line);
 			$cipher = str_replace("-",", ",$cipher[1]);
-			echo "<b>Ciphers supported:</b> ". $cipher . "<br>";
+			echo "<b>Ciphers supported:</b> <span id='ciphers'>". $cipher . "</span><br>";
 			echo "<br>";
 		}
 		if(strpos($line,'Protocol') !== false){
 			$protocol = explode(":", $line);
-			echo  "<b>Version of SSL/TLS:</b> ". $protocol[1] . "<br>";
+			echo  "<b>Version of SSL/TLS:</b> <span id='version'>". $protocol[1] . "</span><br>";
 			echo "<br>";
 		}
 	}
